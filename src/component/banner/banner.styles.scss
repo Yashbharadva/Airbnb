@@ -1,0 +1,35 @@
+.box {
+    background-color: rgb(245, 104, 104);
+    width: 103rem;
+    padding: 50px;
+    margin-top: 6rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 3rem;
+    
+
+    .banner {
+
+        h1{
+            background-color: rgb(245, 104, 104);
+            margin-left: 32rem;
+            width: 43rem;
+           }
+
+        .button {
+            align-items: center;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 6rem;
+            margin-left: 50rem;
+            background-color: rgb(245, 104, 104);
+            
+
+            &:hover {
+                cursor: pointer;
+                color: white;
+                
+            }
+        }
+    }
+}
