@@ -1,0 +1,71 @@
+.exe {
+    margin-left: 05.2rem;
+    margin-top: 5rem;
+    width: auto;
+    margin-right: 5rem;
+
+    .ex {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        border-radius: 10px;
+
+
+        img {
+            border-radius: 10px;
+            width: 53rem;
+            border: 0px solid black;
+        }
+
+        .container {
+
+            position: absolute;
+            font-size: 20px;
+            right: 70%;
+            top: 210%;
+            color: white;
+            transform: translate(1%, 135%);
+
+
+            .button {
+                padding: 0px 8px;
+                cursor: pointer;
+                width: 5.5rem;
+                padding: -20px;
+                border: 1px solid white;
+                font-size: small;
+
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+
+        .containerr {
+            position: absolute;
+            font-size: 20px;
+            right: 22%;
+            top: 210%;
+            color: white;
+            transform: translate(1%, 135%);
+
+
+            .buttonn {
+                padding: 0px 8px;
+                cursor: pointer;
+                width: 9rem;
+                font-size: small;
+                padding: -20px;
+                border: 1px solid white;
+
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+
+}

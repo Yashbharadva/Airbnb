@@ -1,0 +1,38 @@
+.que {
+    display: flex;
+    border-radius: 10px;
+    margin-left: 05.2rem;
+    margin-top: 5rem;
+    margin-right: 5rem;
+
+    img {
+        border-radius: 10px;
+        width: 120rem;
+        border: 0px solid black;
+    }
+
+    .container {
+
+        position: absolute;
+        font-size: 50px;
+        right: 34%;
+        top: 260%;
+        color: white;
+        transform: translate(15%, 150%);
+
+
+        .button {
+            padding: 0px 3px;
+            cursor: pointer;
+            width: 9.2rem;
+            border: 1px solid white;
+            font-size: 16px;
+            transform: translate(15%,390%);
+            border-radius: 1px;
+            &:hover{
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
