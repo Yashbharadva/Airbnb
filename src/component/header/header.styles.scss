@@ -16,19 +16,18 @@
         border-radius: 10px;
         color: red;
         
-        
 
         .option{
             cursor: pointer;
             align-items: center;
             padding: 5px;
-            border-radius: 10px;
+            
            
 
             &:hover{
                 cursor: pointer;
                 color: rgb(58, 78, 96);
-                border: 1px solid black;
+                
             }
 
         }
@@ -61,7 +60,7 @@
             &:hover{
                 cursor: pointer;
                 color: rgb(58, 78, 96);
-                border: 1px solid black;
+                
 
             }
 

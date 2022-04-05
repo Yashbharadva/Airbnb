@@ -1,12 +1,32 @@
 .footer{
     display: flex;
     justify-content: space-between;
+    margin-left: 0.2rem;
+    margin-top: 0.5rem;
+    width: auto;
+    margin-right: 5rem;
+    padding: 0 15px;
+
+    .abc{
+        padding: 0.6rem 0;
+    }
+    
+    a:link{
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+      }
 
 .container1{
-    margin-left: 05.2rem;
+    margin-left: 5.2rem;
     margin-top: 10rem;
     width: auto;
     margin-right: 5rem;
+    padding: 0 15px;
+
+   
 }
 
 .container2{
@@ -14,17 +34,23 @@
     margin-top: 10rem;
     width: auto;
     margin-right: 5rem;
+
+   
 }
 .container3{
     margin-left: 05.2rem;
     margin-top: 10rem;
     width: auto;
     margin-right: 5rem;
+
+    
 }
 .container4{
     margin-left: 05.2rem;
     margin-top: 10rem;
     width: auto;
     margin-right: 5rem;
+
+    
 }
 }
