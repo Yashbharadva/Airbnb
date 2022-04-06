@@ -1,0 +1,74 @@
+.lower-footer {
+    margin-left: 4.2rem;
+    margin-top: 8.5rem;
+    padding: 0 15px;
+    display: flex;
+
+    // #horizontal-line{
+    //     width: 1px;
+    //     height: 5px;
+    //     background-color: black;
+    // }
+
+    .xyz{
+        margin-top: 1.4rem;
+        margin-right: 1.4rem;
+    }
+
+    .abc {
+        margin-top: 1.3rem;
+        padding: 0 15px;
+        justify-content: space-between;
+        margin-left: -0.3rem;
+    
+        a:link {
+            text-decoration: none;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    
+
+
+    .language{
+        margin: 1.2rem;
+        margin-left: 50rem;
+        cursor: pointer;
+
+        
+    }
+
+    .inr{
+        margin: 1.2rem;
+        cursor: pointer;
+
+        
+    }
+
+    h5{
+        cursor: pointer;
+        margin-left: -1rem;
+    }
+
+    .facebook{
+       margin-left: 5rem;
+       margin-top: 1rem;
+       cursor: pointer;
+    }
+
+    .twitter{
+        margin-left: 2.8rem;
+        margin-top: 1rem;
+        cursor: pointer;
+     }
+
+     .instagram{
+        margin-left: 2.8rem;
+        margin-top: 1rem;
+        cursor: pointer;
+     }
+    
+}

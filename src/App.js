@@ -8,6 +8,7 @@ import Main from './component/main-trip/main-trip.component';
 import Experiences from './component/experiences/experiences.component';
 import Question from './component/question/question.component';
 import Footer from './component/footer/footer.component';
+import Lower from './component/lower-footer/lower-footer.component';
 
 import './App.css';
 
@@ -23,6 +24,7 @@ const App = () => {
     <Experiences />
     <Question/>
     <Footer />
+    <Lower />
     </>
   )
   };

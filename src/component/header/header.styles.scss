@@ -1,26 +1,26 @@
 .header_logo {
     display: flex;
-    height: 120px;
-    width: 100vw;
+    height: 7.5rem;
+    width: 119rem;
     margin-left: 3rem;
     cursor: pointer;
 
     .options {
-        width: 50%;
-        height: 100%;
+        width: 60rem;
+        height: 8rem;
         display: flex;
         align-items: center;
         justify-content: right;
         column-count: 3;
         column-gap: 1.8rem;
-        border-radius: 10px;
+        border-radius: 0.625rem;
         color: red;
         
 
         .option{
             cursor: pointer;
             align-items: center;
-            padding: 5px;
+            padding: 0.313rem;
             
            
 
@@ -34,27 +34,33 @@
         
     }
     .hosts{
-        width: 35%;
-        height: 100%;
+        width: 41.5rem;
+        height: 8rem;
         display: flex;
         align-items: center;
         justify-content: right;
 
-        img{
+        .language{
             width: 3rem;
             height: 2rem;
-            padding: 15px;
+            padding: 0.938rem;
             cursor: pointer;
-            border-radius: 20px; 
+
         }
         
+        .profile{
+            width: -1rem;
+            height: 2rem;
+            padding: 0.938rem;
+            cursor: pointer;
+        }
 
         .host{
-            padding: 10px 15px;
+            padding: 0.625rem 0.938rem;
             cursor: pointer;
             align-items: center;
-            padding: 15px;
-            border-radius: 10px;
+            padding: 0.938rem;
+            border-radius: 0.925rem;
             color: red;
 
             &:hover{

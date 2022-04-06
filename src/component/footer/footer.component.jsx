@@ -7,7 +7,9 @@ import './footer.styles.scss';
 const Footer = () => {
     return (
         <div className="footer">
-            <div className="container1">
+            
+            <div className="container">
+            
                 <h4>Support</h4>
                 <div className="abc">
                     <a href="/help/home?from=footer">
@@ -33,10 +35,8 @@ const Footer = () => {
                     <a href="/help/home?from=footer">
                         Report a neighbourhood concern
                     </a> </div>
-                
-                
             </div>
-            <div className="container2">
+            <div className="container">
                 <h4>Community</h4>
                 <div className="abc">
                     <a href="/help/home?from=footer">
@@ -51,7 +51,8 @@ const Footer = () => {
                         Combating discrimination
                     </a> </div>
             </div>
-            <div className="container3">
+            <div className="container">
+                
                 <h4>Hosting</h4>
                 <div className="abc">
                     <a href="/help/home?from=footer">
@@ -74,7 +75,7 @@ const Footer = () => {
                         How to host responsibly
                     </a> </div>
             </div>
-            <div className="container4">
+            <div className="container">
                 <h4>About</h4>
                 <div className="abc">
                     <a href="/help/home?from=footer">

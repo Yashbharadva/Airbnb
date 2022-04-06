@@ -1,6 +1,10 @@
 import React from "react";
 import './header.styles.scss';
 
+import { IoIosGlobe } from 'react-icons/io';
+
+import { CgProfile } from 'react-icons/cg';
+
 const Header = () => {
     return (
         <div classname='header'>
@@ -24,14 +28,13 @@ const Header = () => {
                         Become a Host
                     </div>
 
-                    <div className="image">
-                        <img src="https://previews.123rf.com/images/geekclick/geekclick2001/geekclick200100049/136800495-earth-globe-icon-vector-icons-on-a-white-background-trendy-linear-icon-icon-for-website-and-print-em.jpg"
-                            alt="laungauge" />
-
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCZlCnFhoQcZYphXnXqoJG0pCpnJ-pkrifJ7dJyntZdelSRBUrdD4Sao2ePQQyZYXfZUA&usqp=CAU.png"
-                            alt="profile" />
-                    </div>
+                    <div className="language">
+                    <IoIosGlobe size="1.5em"/>
                 </div>
+                <div className="profile">
+                        <CgProfile size="1.5em" />
+                        </div>
+                    </div>
             </div>
         </div>
     )
