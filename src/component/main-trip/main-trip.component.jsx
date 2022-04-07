@@ -6,8 +6,10 @@ import Trip from "../trip/trip.component";
 
 const Main = () => {
     return (
+        
         <div className="head">
             <h1>Inspiration for your next trip</h1>
+            <div className="next-trip">
             <div className="main">
                 <Trip
                     src="https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320"
@@ -26,6 +28,7 @@ const Main = () => {
                     title="karjat"
                     description="53 kilometers away" />
             </div>
+        </div>
         </div>
     )
 }

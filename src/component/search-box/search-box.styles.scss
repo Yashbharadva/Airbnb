@@ -1,18 +1,24 @@
+.searchmain{
+background-color: black;
+width: 100%;
+
 .searchbox {
-    align-items: center;
-    margin-left: 42rem;
+    margin-left: 34rem;
     padding: 20px;
     display: flex;
     max-width: fit-content;
-    height: px;
     border: 1px solid lightgray;
     border-radius: 999px;
     background-color: white;
+    
 }
 
 .searchbox > input{
     border: none;
     background-color: white;
-    width: 550px;
+    width: 690px;
     outline-width: 0;
+    
+}
+
 }

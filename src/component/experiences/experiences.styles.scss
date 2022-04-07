@@ -1,68 +1,71 @@
 .exe {
-    margin-left: 05.2rem;
+    margin-left: 8.2rem;
     margin-top: 5rem;
     width: auto;
-    margin-right: 5rem;
 
     .ex {
         display: flex;
-        width: 100%;
+        width: auto;
         height: auto;
-        justify-content: space-between;
+        // justify-content: space-between;
         border-radius: 10px;
 
 
         img {
             border-radius: 10px;
-            width: 53rem;
+            width: 51rem;
             border: 0px solid black;
         }
 
         .container {
 
             position: absolute;
-            font-size: 20px;
-            right: 70%;
-            top: 210%;
+            font-size: 25px;
+            right: 78%;
+            top: 120%;
             color: white;
-            transform: translate(1%, 135%);
+            transform: translate(50%, 535%);
 
 
             .button {
-                padding: 0px 8px;
+                padding: 5px 25px;
                 cursor: pointer;
                 width: 5.5rem;
                 padding: -20px;
-                border: 1px solid white;
                 font-size: small;
+                border-radius: 10px;
+                background-color: white;
+                color: black;
 
                 &:hover{
-                    background-color: white;
-                    color: black;
+                    background-color: rgb(234, 234, 234);
                 }
             }
         }
 
         .containerr {
             position: absolute;
-            font-size: 20px;
-            right: 22%;
-            top: 210%;
+            font-size: 25px;
+            right: 12%;
+            top: 165.5%;
             color: white;
-            transform: translate(1%, 135%);
+            transform: translate(-125%, 359%);
 
 
             .buttonn {
-                padding: 0px 8px;
+                padding: 5px 25px;
                 cursor: pointer;
                 width: 9rem;
                 font-size: small;
                 padding: -20px;
                 border: 1px solid white;
+                border-radius: 10px;
+                background-color: white;
+                color: black;
 
                 &:hover{
-                    background-color: white;
-                    color: black;
+                    background-color: rgb(234, 234, 234);
+                    
                 }
             }
         }

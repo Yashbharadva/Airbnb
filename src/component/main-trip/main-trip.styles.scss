@@ -1,8 +1,14 @@
 .head {
-    margin-left: 5.2rem;
-    margin-top: -2rem;
+    margin-left: 8.8rem;
+    margin-top: -2.5rem;
     width: auto;
-    margin-right: 5rem;
+    margin-right: 9rem;
+    font-size: 20px;
+
+
+    .next-trip{
+        margin-top: -32rem;
+    }
 
 
     .main{
@@ -11,11 +17,14 @@
         height: auto;
         justify-content: space-between;
         border-radius: 10px;
+        
         // background-color: rgb(200, 188, 188);
 
         img{
             border-radius: 10px;
             border: 0px solid black;
+            margin-top: 5rem;
+
         }
     }
 }

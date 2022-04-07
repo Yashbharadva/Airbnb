@@ -1,17 +1,29 @@
 import React from "react";
 import './header.styles.scss';
 
+import './header.js';
+
 import { IoIosGlobe } from 'react-icons/io';
 
 import { CgProfile } from 'react-icons/cg';
 
+import { SiAirbnb } from 'react-icons/si';
+
 const Header = () => {
     return (
         <div classname='header'>
+             <div className="abc">
+                </div>
             <div className="header_logo">
-                <img src="https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png"
-                    alt="yash" />
-
+               
+                <div className="text">
+                    airbnb</div>
+                    <div className="logo">
+                <SiAirbnb size="2em"/>
+                
+                </div>
+                
+   
                 <div className="options">
                     <div className="option" to="/place to stay">
                         Place to Stay
@@ -29,14 +41,14 @@ const Header = () => {
                     </div>
 
                     <div className="language">
-                    <IoIosGlobe size="1.5em"/>
+                    <IoIosGlobe size="1.5em" color="white"/>
                 </div>
                 <div className="profile">
-                        <CgProfile size="1.5em" />
+                        <CgProfile size="1.5em" color="white" />
                         </div>
                     </div>
             </div>
-        </div>
+            </div>
     )
 }
 export default Header;

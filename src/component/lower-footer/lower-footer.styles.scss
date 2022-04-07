@@ -4,12 +4,6 @@
     padding: 0 15px;
     display: flex;
 
-    // #horizontal-line{
-    //     width: 1px;
-    //     height: 5px;
-    //     background-color: black;
-    // }
-
     .xyz{
         margin-top: 1.4rem;
         margin-right: 1.4rem;
@@ -20,14 +14,12 @@
         padding: 0 15px;
         justify-content: space-between;
         margin-left: -0.3rem;
+        color: black;
     
         a:link {
             text-decoration: none;
         }
-    
-        a:hover {
-            text-decoration: underline;
-        }
+
     }
 
     

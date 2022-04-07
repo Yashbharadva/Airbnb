@@ -22,7 +22,9 @@ const Experiences = () => {
                     src="https://a0.muscache.com/im/pictures/cae7ae9a-d069-4c6a-9267-795643472df1.jpg?im_w=720"
                     alt="" />
                 <div className="containerr">
-                    <h1>Things to do from home</h1>
+                    <h1>Things to do<br />
+                        from home 
+                        </h1>
                     <div className="buttonn">
                         <h3>Online Experiences</h3>
                     </div>

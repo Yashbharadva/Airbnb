@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from 'react-router-dom';
 
 
 import './footer.styles.scss';
@@ -12,95 +13,96 @@ const Footer = () => {
             
                 <h4>Support</h4>
                 <div className="abc">
-                    <a href="/help/home?from=footer">
+                    <Link className="efg" to="/">
                         Help Center
-                    </a> </div> 
+                    </Link> </div> 
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Safety Information
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Safety information
+                    </Link> </div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Cancellation options
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Cancellation options
+                    </Link> </div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Our COVID-19 Response
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Our COVID-19 Response
+                    </Link></div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Supporting people with disabilities
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Supporting people with disabilities
+                    </Link> </div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Report a neighbourhood concern
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Report a neighbourhood concern
+                    </Link></div>
             </div>
             <div className="container">
                 <h4>Community</h4>
                 <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Airbnb.org: disaster relief housing
-                    </a> </div>
+                <Link className="efg" to="/">
+                Airbnb.org: disaster relief housing
+                    </Link> </div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Support Afghan refugees
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Support Afghan refugees
+                    </Link> </div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Combating discrimination
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Combating discrimination
+                    </Link> </div>
             </div>
             <div className="container">
                 
                 <h4>Hosting</h4>
                 <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Try hosting
-                    </a> </div>
+                <Link className="efg" to="/">
+                Try hosting
+                    </Link></div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        AirCover:protection for Hosts
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    AirCover: protection for Hosts
+                    </Link></div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Explore hosting resources
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Explore hosting resources
+                    </Link></div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Visit our community forum
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Visit our community forum
+
+                    </Link> </div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        How to host responsibly
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    How to host responsibly
+                    </Link></div>
             </div>
             <div className="container">
                 <h4>About</h4>
                 <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Newsroom
-                    </a> </div>
+                <Link className="efg" to="/">
+                Newsroom
+                    </Link> </div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Learn about new features
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Learn about new features
+                    </Link></div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Letter from our founders
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Letter from our founders
+                    </Link> </div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Careers
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Careers
+                    </Link> </div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Investors
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Investors
+                    </Link> </div>
                     <div className="abc">
-                    <a href="/help/home?from=footer">
-                        Airbnb Luxe
-                    </a> </div>
+                    <Link className="efg" to="/">
+                    Airbnb Luxe
+                    </Link> </div>
             </div>
         </div>
     )
