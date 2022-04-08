@@ -1,0 +1,13 @@
+.location-dropdown{
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: flex;
+    z-index: 5;
+
+    .buttonoflocation{
+        width: 1rem;
+        color: orange;
+        background-color: aqua;
+    }
+}

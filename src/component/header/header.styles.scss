@@ -1,9 +1,20 @@
+
+.navheader.active{
+    color: aqua;
+    position: absolute;
+}
+
 .header_logo {
     display: flex;
-    height: 128px;
+    height: 148px;
     width: 100%;
     cursor: pointer;
     background-color: black;
+    position: fixed;
+    z-index: 999;
+    top: 0%;
+    background: no-repeat /cover;
+    transition: 3.5s;
 
     .text{
         color: white;
@@ -91,5 +102,30 @@
         
     }
 
+
 }
+
+
+
+// .header--animated {
+//     background: rgba(255, 255, 255, 0.3);
+//     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+//     backdrop-filter: blur(4px);
+//     box-shadow: rgba(255, 255, 255, 0.3);
+//     transition: all 0.1s;
+  
+//   }
+  
+//   .header--animated > h3 {
+//     color: white;
+//   }
+
+//   head.black{
+//       background-color: blue;
+//   }
+
+// .header_logo.active{
+//     background-color: white;
+// }
+
 

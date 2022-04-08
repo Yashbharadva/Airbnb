@@ -1,13 +1,12 @@
 .book {
     background-color: black;
     height: 500px;
-
-
-
+    z-index: -1;
 
 .booking {
     margin-left: 4rem;
     padding: 5rem;
+    
 
     img {
         width: 101rem;
@@ -16,13 +15,18 @@
     }
 
     .container {
-        position: absolute;
+        // position: relative;
         font-size: 1.25rem;
-        top: 58rem;
+        top: 80rem;
         right: 42rem;
         color: white;
-        transform: translate(3%, 315%);
+        transform: translate(30%, -195%);
         align-items: center;
+        z-index: -3;
+        // transition: 0.3s ease-in-out ;
+        
+        
+
 
 
         .button {
@@ -36,6 +40,7 @@
             font-size: small;
             margin-left: 0rem;
             
+            
 
 
             h3 {
@@ -45,6 +50,7 @@
                 background: linear-gradient(90deg, #6F019C, #C6017E);
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
+                
             }
         }
     }

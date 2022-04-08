@@ -5,11 +5,12 @@
     margin-right: 9rem;
     font-size: 20px;
 
-
-    .next-trip{
-        margin-top: -32rem;
+    h1{
+        color: black;
     }
 
+    .next-trip{
+        margin-top: 2rem;
 
     .main{
         display: flex;
@@ -17,9 +18,35 @@
         height: auto;
         justify-content: space-between;
         border-radius: 10px;
+        cursor: pointer;
         
-        // background-color: rgb(200, 188, 188);
+        .away{
+            margin-top: 13rem;
+            background-color: #d70466;
+            width: 319px;
+            height: 210px;
+            margin-left: 10px;
+            border-radius: 10px;
 
+            .photo{
+                margin-top: -45rem;
+                margin-left: -0.4rem;
+            }
+        
+        .title{
+            color: white;
+            font-size: 40px;
+            width: 15rem;
+            transform: translate(5%,-30%);
+        }
+
+        .description{
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            
+            transform: translate(4.5%,15%);
+        }
+    }
         img{
             border-radius: 10px;
             border: 0px solid black;
@@ -28,4 +55,4 @@
         }
     }
 }
-
+}

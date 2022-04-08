@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './header.styles.scss';
 
 import './header.js';
@@ -9,8 +9,23 @@ import { CgProfile } from 'react-icons/cg';
 
 import { SiAirbnb } from 'react-icons/si';
 
+import 'react-date-range/dist/styles.css';
+
+
+
 const Header = () => {
-    return (
+    const [navheader,setHeader] = useState(false);
+    const changeBackground = () =>{
+        if(window.scrollY >=90){
+            setHeader(true);
+        } else {
+            setHeader(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground);
+    return (  
+        <nav className={navheader ? 'navheader.active' : 'navheader'}>       
         <div classname='header'>
              <div className="abc">
                 </div>
@@ -49,6 +64,9 @@ const Header = () => {
                     </div>
             </div>
             </div>
+            </nav>  
     )
 }
+
 export default Header;
+

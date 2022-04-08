@@ -7,6 +7,14 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
+    {/* <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type='text/javascript'>
+      $(window).on('scroll',function(){
+            if($(window).scrollTop(){
+
+      })
+        })
+    </script> */}
     <App />
   </BrowserRouter>,
   document.getElementById('root')
