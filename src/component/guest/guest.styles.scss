@@ -1,0 +1,164 @@
+.box2{
+    background-color: #ffffff;
+    height: 25rem;
+    width: 27rem;
+    margin-left: 80rem;
+    margin-top: -282rem;
+    margin-right: 80px;
+    border-radius: 15px;
+    border: 1px solid black;
+    
+
+
+    .main-age{
+        margin-top: 2rem;
+        margin-left: 2rem;
+        font-size: 20px;
+
+        .adults-age{
+            font-size: 15px;
+            color: gray;
+        }
+
+        .arrow1{
+            margin-left: 15rem;
+            margin-top: -2rem;
+            cursor: pointer;
+            font-size: 27px;
+            color: grey;
+        }
+
+        .arrow2{
+            margin-left: 18.5rem;
+            margin-top: -1.7rem;
+            cursor: pointer;
+            font-size: 27px;
+            color: grey;
+
+            &:hover{
+                color: black;
+            }
+        }
+
+        .value{
+            margin-left: 17.2rem;
+            margin-top: -1.8rem;
+        }
+    }
+
+    .child{
+        margin-top: 2rem;
+        margin-left: 2rem;
+        font-size: 20px;
+        
+
+        .child-age{
+            font-size: 15px;
+            color: gray;
+        }
+
+        .arrow1{
+            margin-left: 15rem;
+            margin-top: -2rem;
+            cursor: pointer;
+            font-size: 27px;
+            color: grey;
+        }
+
+        .arrow2{
+            margin-left: 18.5rem;
+            margin-top: -1.7rem;
+            cursor: pointer;
+            font-size: 27px;
+            color: grey;
+
+            &:hover{
+                color: black;
+            }
+        }
+
+        .value{
+            margin-left: 17.2rem;
+            margin-top: -1.8rem;
+        }
+    }
+
+    .main-infants{
+        margin-top: 2rem;
+        margin-left: 2rem;
+        font-size: 20px;
+
+        .child-age{
+            font-size: 15px;
+            color: gray;
+        }
+
+        .arrow1{
+            margin-left: 15rem;
+            margin-top: -2rem;
+            cursor: pointer;
+            font-size: 27px;
+            color: grey;
+        }
+
+        .arrow2{
+            margin-left: 18.5rem;
+            margin-top: -1.7rem;
+            cursor: pointer;
+            font-size: 27px;
+            color: grey;
+
+            &:hover{
+                color: black;
+            }
+        }
+
+        .value{
+            margin-left: 17.2rem;
+            margin-top: -1.8rem;
+        }
+    }
+
+    .main-pets{
+        margin-top: 2rem;
+        margin-left: 2rem;
+        font-size: 20px;
+
+        .animal{
+            color: black;
+            font-size: 15px;
+        }
+
+        .arrow1{
+            margin-left: 15rem;
+            margin-top: -2rem;
+            cursor: pointer;
+            font-size: 27px;
+            color: grey;
+        }
+
+        .arrow2{
+            margin-left: 18.5rem;
+            margin-top: -1.7rem;
+            cursor: pointer;
+            font-size: 27px;
+            color: grey;
+
+            &:hover{
+                color: black;
+            }
+        }
+
+        .value{
+            margin-left: 17.2rem;
+            margin-top: -1.8rem;
+        }
+    }
+
+    .notice{
+        margin-top: 2rem;
+        margin-left: 2rem;
+        font-size: 15px;
+        color: grey;
+    }
+}

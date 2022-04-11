@@ -1,0 +1,35 @@
+.data {
+    display: flex;
+    margin-left: 0rem;
+    width: auto;
+    transition: transform 0.75s ease-out;
+    
+    &:hover{
+        background-color: rgb(238, 238, 238);
+        transform: scale(1.055);
+        border-radius: 10px;
+    }
+
+
+    .locate-image{
+
+        img{
+        height: 3rem;
+        width: 3rem;
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        padding: 2px;
+        border-radius: 15px;
+    }
+}
+    .titleforimage{
+        margin-top: 1.8rem;
+        margin-left: 1rem;
+    
+
+    .subtitle{
+        margin-top: 0.3rem;
+        margin-left: -0rem;
+    }
+    }
+}

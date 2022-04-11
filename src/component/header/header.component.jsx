@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import './header.styles.scss';
 
 import './header.js';
+
 
 import { IoIosGlobe } from 'react-icons/io';
 
@@ -49,6 +50,7 @@ const Header = () => {
                     <div className="option" to="/online experiences">
                         Online Experiences
                     </div>
+                    
                 </div>
                 <div className="hosts">
                     <div className="host" to="/become a host">
@@ -63,6 +65,7 @@ const Header = () => {
                         </div>
                     </div>
             </div>
+            
             </div>
             </nav>  
     )

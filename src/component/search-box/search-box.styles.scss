@@ -1,71 +1,98 @@
-.searchmain{
-background-color: black;
-width: 100%;
+.searchmain {
+    background-color: black;
+    width: 100%;
 
-
-
-
-.searchbox {
-    margin-left: 26rem;
-    margin-top: 9.2rem;
-    margin-right: 30rem;
-    padding: 1px;
-    display: flex;
-    border: 1px solid lightgray;
-    border-radius: 999px;
-    background-color: white;
-    cursor: pointer;
-    justify-content: space-between;
-
-
-    .location{
-        color: black;
+    .searchbox {
+        margin-left: 26rem;
+        margin-top: 9.2rem;
+        margin-right: 30rem;
+        display: flex;
+        border: 1px solid lightgray;
         border-radius: 999px;
-        padding: 10px 15px;
-        // border: 1px solid black;
+        background-color: white;
+        cursor: pointer;
+         justify-content: space-between;
+        padding: 0px 10px;
 
-        h5{
-            margin-top: -1.2rem;
-            color: grey;
-        }
-        &:hover{
-            background-color: rgb(235, 235, 235);
-            width: auto;
-        }
-    }
-    .location1{
-        color: black;
-        border-radius: 999px;
-        padding: 10px 5px;
-        margin-left: -6rem;
-        // border: 1px solid black
-        
-        h5{
-            margin-top: -1.2rem;
-            color: grey
-        }
-        &:hover{
-            background-color: rgb(235, 235, 235);
-            width: auto;
-            
-        }
-    }
 
-        
-        
-    }
+        .location {
+            color: black;
+            border-radius: 999px;
+            padding: 10px 10px;
+       
 
+            h5 {
+                margin-top: -1.2rem;
+                color: grey;
+            }
+
+            &:hover {
+                background-color: rgb(235, 235, 235);
+                width: auto;
+            }
+        }
+
+        .location1 {
+            color: black;
+            border-radius: 999px;
+            padding: 10px 0px;
+            margin-left: -3rem;
+           
+
+            h5 {
+                margin-top: -1.2rem;
+                color: grey
+            }
+
+            &:hover {
+                background-color: rgb(235, 235, 235);
+                width: auto;
+
+            }
+        }
+
+        .location2 {
+            color: black;
+            border-radius: 999px;
+            padding: 10px 0px;
+         
+
+            h5 {
+                margin-top: -1.2rem;
+                color: grey
+            }
+
+            &:hover {
+                background-color: rgb(235, 235, 235);
+                width: auto;
+
+            }
+        }
+
+        .location3 {
+            color: black;
+            border-radius: 999px;
+            padding: 10px 0px;
     
 
-    
-    
+            h5 {
+                margin-top: -1.2rem;
+                color: grey
+            }
+
+            &:hover {
+                background-color: rgb(235, 235, 235);
+                width: auto;
+
+            }
+        }
+    }
 }
 
-.searchbox > input{
+.searchbox>input {
     border: none;
     background-color: white;
     width: 690px;
     outline-width: 0;
-    
-}
 
+}

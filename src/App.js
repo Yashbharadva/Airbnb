@@ -10,6 +10,7 @@ import Question from './component/question/question.component';
 import Footer from './component/footer/footer.component';
 import Lower from './component/lower-footer/lower-footer.component';
 import Locationdrop from './component/location-dropdown/location-dropdown.component';
+import Guest from './component/guest/guest.component';
 
 import './App.css';
 
@@ -27,6 +28,7 @@ const App = () => {
     <Footer />
     <Lower />
     <Locationdrop />
+    < Guest />
     </>
   )
   };

@@ -1,13 +1,58 @@
-.location-dropdown{
-    position: absolute;
-    width: auto;
-    height: auto;
-    display: flex;
-    z-index: 5;
+.location-dropdown{ 
+    margin-left: 29rem;
+    margin-top: -282rem;
+    z-index:2 ;
+    position:absolute;
+    cursor: pointer;
+    
 
-    .buttonoflocation{
-        width: 1rem;
-        color: orange;
-        background-color: aqua;
+.box1{
+    background-color: #ffffff;
+    height: 51rem;
+    width: 21rem;
+    // padding: 120px;
+    margin-left: -30px;
+    margin-right: 80px;
+    border-radius: 15px;
+    border: 1px solid black;
+
+    .near{
+        margin-left: 2rem;
+        margin-top: 2rem;
     }
+    
+
+    .location-button{
+        border: 1px solid black;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        width: 16rem;
+        padding: 10px 10px;
+        border-radius: 99px;
+        background: linear-gradient(to right, #972323, #600d0d);
+        background: linear-gradient(90deg, #6F019C, #C6017E);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        
+        &:hover{
+            box-shadow: #6F019C;
+        }
+        
+        
+
+        .aero{
+            margin-left: 15rem;
+            margin-top: -1.1rem;
+            background: linear-gradient(to right, #ffffff, #ffffff);
+            // background: linear-gradient(90deg, #6F019C, #C6017E);
+            // -webkit-text-fill-color: transparent;
+            // -webkit-background-clip: text;
+        }
+
+    }
+    .anywhere{
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+}
 }
