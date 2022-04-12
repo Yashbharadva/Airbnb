@@ -10,11 +10,13 @@ import Question from './component/question/question.component';
 import Footer from './component/footer/footer.component';
 import Lower from './component/lower-footer/lower-footer.component';
 import Locationdrop from './component/location-dropdown/location-dropdown.component';
+import { connect } from 'react-redux';
 import Guest from './component/guest/guest.component';
+import ProfileDropdown from './component/profile-dropdown/profile-dropdown.component';
 
 import './App.css';
 
-const App = () => {
+const App = ({hidden, hidden2, hidden3}) => {
   return(
     <>
     <Header />
@@ -27,11 +29,23 @@ const App = () => {
     <Question/>
     <Footer />
     <Lower />
-    <Locationdrop />
-    < Guest />
+    <ProfileDropdown />
+    {
+      hidden ? null : <Locationdrop />
+    },
+    {
+      hidden2 ? null : <Guest />
+    },
+    {
+      hidden3 ? null : <header />
+    }
     </>
   )
   };
 
+  const mapStateToProps = ({  location: { hidden }, guest: { hidden2 }, profile: { hidden3} }) => ({
+    hidden, hidden2
+  });
 
-export default App;
+
+export default connect(mapStateToProps)(App);

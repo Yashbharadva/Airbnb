@@ -1,5 +1,4 @@
-
-.navheader.active{
+.navheader.active {
     color: aqua;
     position: absolute;
 }
@@ -11,21 +10,92 @@
     cursor: pointer;
     background-color: black;
     position: fixed;
-    z-index: 999;
+    z-index: 9;
     top: 0%;
-    background: no-repeat /cover;
-    transition: 3.5s;
+    // background: cover;
+    // transition: 3.5s;
 
-    .text{
+    .box3 {
+        background-color: white;
+        color: black;
+        width: 11%;
+        height: 210%;
+        margin-top: 6rem;
+        margin-left: -13rem;
+        border-radius: 20px;
+        
+
+
+        .profile {
+            font-size: 14px;
+            padding: 0px 10px;
+
+            .profile1 {
+                padding: 0.5px 5px;
+                margin-top: 0.3rem;
+
+                &:hover {
+                    background-color: rgb(226, 217, 217);
+                    border-radius: 10px;
+                }
+            }
+
+            .profile2 {
+                color: gray;
+                padding: 1px 5px;
+
+                &:hover {
+                    background-color: rgb(226, 217, 217);
+                    border-radius: 10px;
+                }
+            }
+
+            .profile3 {
+                color: gray;
+                width: auto;
+                padding: 0.5px 5px;
+
+                &:hover {
+                    background-color: rgb(226, 217, 217);
+                    border-radius: 10px;
+                }
+            }
+
+            .profile4 {
+                color: gray;
+                width: auto;
+                padding: 0.5px 5px;
+
+                &:hover {
+                    background-color: rgb(226, 217, 217);
+                    border-radius: 10px;
+                }
+            }
+
+            .profile5 {
+                color: gray;
+                width: auto;
+                padding: 0.5px 5px;
+
+                &:hover {
+                    background-color: rgb(226, 217, 217);
+                    border-radius: 10px;
+                }
+            }
+        }
+
+    }
+
+    .text {
         color: white;
         margin-top: 2.4rem;
         margin-left: 11.5rem;
         font-size: 200%;
         cursor: pointer;
-        
+
     }
 
-    .logo{
+    .logo {
         color: white;
         margin-top: 2.4rem;
         margin-left: -7.5rem;
@@ -34,75 +104,92 @@
     }
 }
 
-    .options {
-        width: 48.5%;
-        height: 128px;
-        display: flex;
+.options {
+    width: 48.5%;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    column-count: 3;
+    column-gap: 28.8px;
+    border-radius: 10px;
+    color: white;
+
+
+    .option {
+        cursor: pointer;
         align-items: center;
-        justify-content: right;
-        column-count: 3;
-        column-gap: 28.8px;
+        padding: 5px;
+
+
+
+        &:hover {
+            cursor: pointer;
+            color: rgb(58, 78, 96);
+
+        }
+
+    }
+
+}
+
+.hosts {
+    width: 34%;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    .language {
+        width: auto;
+        height: 25px;
+        padding: 15px;
+        cursor: pointer;
+
+    }
+
+    .profile-line {
+        border: 1px solid white;
+        border-radius: 99px;
+        background-color: white;
+
+        .profile {
+            width: auto;
+            margin-top: -2.6rem;
+            margin-left: 1.8rem;
+            height: 25px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .three-line {
+            width: auto;
+            height: 25px;
+            padding: 5px;
+            margin-top: 0.2rem;
+            cursor: pointer;
+        }
+
+
+    }
+
+
+
+    .host {
+        padding: 10px 15px;
+        cursor: pointer;
+        align-items: center;
+        padding: 10px;
         border-radius: 10px;
         color: white;
-        
 
-        .option{
+        &:hover {
             cursor: pointer;
-            align-items: center;
-            padding: 5px;
-            
-           
+            color: rgb(58, 78, 96);
 
-            &:hover{
-                cursor: pointer;
-                color: rgb(58, 78, 96);
-                
-            }
 
         }
-        
     }
-    .hosts{
-        width: 35%;
-        height: 128px;
-        display: flex;
-        align-items: center;
-        justify-content: right;
-
-        .language{
-            width: 5%;
-            height: 25px;
-            padding: 15px;
-            cursor: pointer;
-
-        }
-        
-        .profile{
-            width: 3%;
-            height:25px;
-            padding: 15px;
-            cursor: pointer;
-        }
-
-        .host{
-            padding: 10px 15px;
-            cursor: pointer;
-            align-items: center;
-            padding: 10px;
-            border-radius: 10px;
-            color: white;
-
-            &:hover{
-                cursor: pointer;
-                color: rgb(58, 78, 96);
-                
-
-            }
-
-        
-    }
-
-
 }
 
 
@@ -113,9 +200,9 @@
 //     backdrop-filter: blur(4px);
 //     box-shadow: rgba(255, 255, 255, 0.3);
 //     transition: all 0.1s;
-  
+
 //   }
-  
+
 //   .header--animated > h3 {
 //     color: white;
 //   }
@@ -127,5 +214,3 @@
 // .header_logo.active{
 //     background-color: white;
 // }
-
-

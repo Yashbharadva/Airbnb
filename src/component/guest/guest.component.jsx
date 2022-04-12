@@ -42,6 +42,7 @@ const Guest = ({ quatity }) => {
                     If you're lucky enough to have more than 2 pets with you, be sure to let your host know.
                 </div>
             </div>
+            
         </div>
     )
 }
