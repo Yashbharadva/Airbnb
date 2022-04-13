@@ -37,12 +37,16 @@ const Header = ( { hidden3, toggleProfileHidden })  => {
                 </div>
                 <div className="header_logo">
 
+                <a href="/help/home?from=footer">
                     <div className="text">
-                        airbnb</div>
+                    
+                        airbnb
+                         </div>
                     <div className="logo">
-                        <SiAirbnb size="2em" />
-
+                        <SiAirbnb size="2.5em" color="white"/>
+                        
                     </div>
+                    </a>
 
 
                     <div className="options">

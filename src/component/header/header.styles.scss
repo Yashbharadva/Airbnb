@@ -15,6 +15,10 @@
     // background: cover;
     // transition: 3.5s;
 
+    a:link {
+        text-decoration: none;
+    }
+
     .box3 {
         background-color: white;
         color: black;
@@ -97,8 +101,8 @@
 
     .logo {
         color: white;
-        margin-top: 2.4rem;
-        margin-left: -7.5rem;
+        margin-top: -2.9rem;
+        margin-left: 9.0rem;
         cursor: pointer;
 
     }
