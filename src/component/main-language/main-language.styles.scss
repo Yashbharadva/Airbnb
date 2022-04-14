@@ -1,0 +1,39 @@
+.box4{
+    background-color: #ffffff;
+    height: 71rem;
+    width: 61rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-left: 28rem;
+    margin-top: -285rem;
+    overflow: scroll;
+
+    .main-three{
+        font-size: 20px;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        font-weight: bold;
+    }
+
+    .english{
+        display: flex;
+    }
+
+   
+
+    .region{
+        font-size: 20px;
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        font-weight: bold;
+    }
+
+.main-region{
+        padding: 0px 10px;
+        column-count: 5;
+        justify-content: space-between;
+        
+}
+}
+

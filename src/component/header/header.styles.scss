@@ -1,139 +1,266 @@
-.navheader.active {
-    color: aqua;
+.header {
     position: absolute;
-}
-
-.header_logo {
+    top: 0;
+    left: 0;
     display: flex;
-    height: 148px;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    cursor: pointer;
+    height: 150px;
     background-color: black;
-    position: fixed;
-    z-index: 9;
-    top: 0%;
-    // background: cover;
-    // transition: 3.5s;
+    color: #333;
+    transform: translateY(0);
+    transition: transform 6s ease;
 
-    a:link {
-        text-decoration: none;
+
+    .logo {
+        margin-left: 6rem;
+        color: white;
+        cursor: pointer;
     }
 
-    .box3 {
-        background-color: white;
-        color: black;
-        width: 11%;
-        height: 210%;
-        margin-top: 6rem;
-        margin-left: -13rem;
-        border-radius: 20px;
+   
+
+    .profile-links {
+        display: flex;
+        color: white;
+        cursor: pointer;
+        // margin-left: -60rem;
+
+        
         
 
+        .profile-item1 {
+            width: auto;
+            margin: 0rem 15rem;
+            margin-left: -12rem;
+        }
 
+        .profile-item2 {
+            width: auto;
+            margin: 0rem 15rem;
+            margin-left: -13rem;
+        }
+
+        .profile-item3 {
+            width: auto;
+            margin: 0rem 10rem;
+            margin-left: -13rem;
+        }
+    }
+    
+.box5{
+
+    background-color: white;
+    color: black;
+    width: 11%;
+    height: 210%;
+    margin-top: 25rem;
+    margin-left: -15rem;
+    border-radius: 20px;
+
+        .box3{
+            
+        
+       
         .profile {
             font-size: 14px;
             padding: 0px 10px;
-
+            
+            
+    
             .profile1 {
                 padding: 0.5px 5px;
-                margin-top: 0.3rem;
-
+                margin-top: 0.5rem;
+    
                 &:hover {
                     background-color: rgb(226, 217, 217);
                     border-radius: 10px;
                 }
             }
-
+    
             .profile2 {
                 color: gray;
                 padding: 1px 5px;
-
+    
                 &:hover {
                     background-color: rgb(226, 217, 217);
                     border-radius: 10px;
                 }
             }
-
+    
             .profile3 {
                 color: gray;
                 width: auto;
                 padding: 0.5px 5px;
-
+    
                 &:hover {
                     background-color: rgb(226, 217, 217);
                     border-radius: 10px;
                 }
             }
-
+    
             .profile4 {
                 color: gray;
                 width: auto;
                 padding: 0.5px 5px;
-
+    
                 &:hover {
                     background-color: rgb(226, 217, 217);
                     border-radius: 10px;
                 }
             }
-
+    
             .profile5 {
                 color: gray;
                 width: auto;
                 padding: 0.5px 5px;
-
+    
                 &:hover {
                     background-color: rgb(226, 217, 217);
                     border-radius: 10px;
                 }
             }
         }
-
+    
+        }
+}
+    
+    
+    .hosts {
+        width: 34%;
+        height: 128px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-left: -22rem;
+    
+        .language {
+            width: auto;
+            height: 25px;
+            padding: 15px;
+            cursor: pointer;
+    
+        }
+    
+        .profile-line {
+            border: 1px solid white;
+            border-radius: 99px;
+            background-color: white;
+    
+            .profile {
+                width: auto;
+                margin-top: -2.6rem;
+                margin-left: 1.8rem;
+                height: 25px;
+                padding: 10px;
+                cursor: pointer;
+            }
+    
+            .three-line {
+                width: auto;
+                height: 25px;
+                padding: 5px;
+                margin-top: 0.2rem;
+                cursor: pointer;
+            }
+    
+    
+        }
+    
+    
+    
+        .host {
+            padding: 10px 15px;
+            cursor: pointer;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+    
+            &:hover {
+                cursor: pointer;
+                color: rgb(58, 78, 96);
+    
+    
+            }
+        }
     }
 
-    .text {
-        color: white;
-        margin-top: 2.4rem;
-        margin-left: 11.5rem;
-        font-size: 200%;
-        cursor: pointer;
+}
 
+
+
+
+
+
+
+.header2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    color: black;
+    transform: translateY(10);
+    transition: transform 6s ease;
+    animation: myanimation 3s;
+    z-index: 2;
+}
+
+@keyframes myanimation {
+    0% {
+        background-color: transparent;
+        color: transparent;
     }
 
-    .logo {
-        color: white;
-        margin-top: -2.9rem;
-        margin-left: 9.0rem;
-        cursor: pointer;
+    35% {
+        background-color: white;
+        color: black;
+    }
 
+    100% {
+        background-color: white;
+        color: black;
     }
 }
 
-.options {
-    width: 48.5%;
-    height: 128px;
+
+.header.shadow {
+    box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+}
+
+.header.hidden {
+    transform: translateY(-110%);
+}
+
+.logo {
+    margin: 0 24px;
+    font-size: 28px;
+    color: red;
+    margin-left: 6rem;
+    cursor: pointer;
+}
+
+.links {
+    padding: 50px;
+    margin: 0 50px;
     display: flex;
-    align-items: center;
-    justify-content: right;
-    column-count: 3;
-    column-gap: 28.8px;
-    border-radius: 10px;
-    color: white;
+    width: auto;
 
 
-    .option {
+    .link-item {
+        width: 20rem;
         cursor: pointer;
-        align-items: center;
-        padding: 5px;
-
-
-
-        &:hover {
-            cursor: pointer;
-            color: rgb(58, 78, 96);
-
-        }
-
+        color: white;
+        margin: 0rem -10rem;
+        margin-left: 5rem;
     }
+
 
 }
 
@@ -143,12 +270,15 @@
     display: flex;
     align-items: center;
     justify-content: right;
+    margin-left: -22rem;
+    color: black;
 
     .language {
         width: auto;
         height: 25px;
         padding: 15px;
         cursor: pointer;
+        
 
     }
 
@@ -185,7 +315,8 @@
         align-items: center;
         padding: 10px;
         border-radius: 10px;
-        color: white;
+        color: black;
+
 
         &:hover {
             cursor: pointer;
@@ -197,24 +328,79 @@
 }
 
 
+.box5{
 
-// .header--animated {
-//     background: rgba(255, 255, 255, 0.3);
-//     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-//     backdrop-filter: blur(4px);
-//     box-shadow: rgba(255, 255, 255, 0.3);
-//     transition: all 0.1s;
+    background-color: white;
+    color: black;
+    width: 11%;
+    height: 230%;
+    margin-top: 25rem;
+    margin-left: -20rem;
+    border-radius: 20px;
+    display: flex;
 
-//   }
-
-//   .header--animated > h3 {
-//     color: white;
-//   }
-
-//   head.black{
-//       background-color: blue;
-//   }
-
-// .header_logo.active{
-//     background-color: white;
-// }
+        .box3{
+            
+        
+       
+        .profile {
+            font-size: 14px;
+            padding: 0px 10px;
+            
+    
+            .profile1 {
+                padding: 0.5px 5px;
+                margin-top: 0.5rem;
+    
+                &:hover {
+                    background-color: rgb(226, 217, 217);
+                    border-radius: 10px;
+                }
+            }
+    
+            .profile2 {
+                color: gray;
+                padding: 1px 5px;
+    
+                &:hover {
+                    background-color: rgb(226, 217, 217);
+                    border-radius: 10px;
+                }
+            }
+    
+            .profile3 {
+                color: gray;
+                width: auto;
+                padding: 0.5px 5px;
+    
+                &:hover {
+                    background-color: rgb(226, 217, 217);
+                    border-radius: 10px;
+                }
+            }
+    
+            .profile4 {
+                color: gray;
+                width: auto;
+                padding: 0.5px 5px;
+    
+                &:hover {
+                    background-color: rgb(226, 217, 217);
+                    border-radius: 10px;
+                }
+            }
+    
+            .profile5 {
+                color: gray;
+                width: auto;
+                padding: 0.5px 5px;
+    
+                &:hover {
+                    background-color: rgb(226, 217, 217);
+                    border-radius: 10px;
+                }
+            }
+        }
+    
+        }
+}

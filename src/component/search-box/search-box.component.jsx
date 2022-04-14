@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { toggleLocationHidden } from '../../Redux/location/location.actions';
 import { toggleGuestHidden } from '../../Redux/guest/guest.actions';
 import './search-box.styles.scss';
+import { toggleLanguageHidden } from '../../Redux/language/language.actions';
+
 
 const SearchBox = ({ toggleLocationHidden, toggleGuestHidden }) => {
     return (
@@ -34,7 +36,8 @@ const SearchBox = ({ toggleLocationHidden, toggleGuestHidden }) => {
 
 const mapDispatchToProps = dispatch => ({
     toggleLocationHidden: () => dispatch(toggleLocationHidden()),
-    toggleGuestHidden: () => dispatch(toggleGuestHidden()),
+    toggleGuestHidden: () => dispatch(toggleGuestHidden())
+    
     
 })
 

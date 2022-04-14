@@ -16,7 +16,8 @@ const Main = () => {
                 <Trip
                     src="https://a0.muscache.com/im/pictures/a433b4d0-8183-4523-b4c5-99b81c5729c1.jpg?im_w=320" />
                     </div>
-                    <div className="title">Lonaval</div>
+                    <div className="title">Lonavala</div>
+                    
                     <div className="description">66 kilometers away</div>
                     </div>
                <div className="away">

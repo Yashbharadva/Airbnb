@@ -13,10 +13,12 @@ import Locationdrop from './component/location-dropdown/location-dropdown.compon
 import { connect } from 'react-redux';
 import Guest from './component/guest/guest.component';
 import ProfileDropdown from './component/profile-dropdown/profile-dropdown.component';
+import MainLanguage from './component/main-language/main-language.component';
 
 import './App.css';
 
-const App = ({hidden, hidden2, hidden3}) => {
+
+const App = ({hidden, hidden2, hidden3, hidden4}) => {
   return(
     <>
     <Header />
@@ -30,6 +32,7 @@ const App = ({hidden, hidden2, hidden3}) => {
     <Footer />
     <Lower />
     <ProfileDropdown />
+    
     {
       hidden ? null : <Locationdrop />
     },
@@ -38,13 +41,16 @@ const App = ({hidden, hidden2, hidden3}) => {
     },
     {
       hidden3 ? null : <header />
+    },
+    {
+      hidden4 ? null : <MainLanguage />
     }
     </>
   )
   };
 
-  const mapStateToProps = ({  location: { hidden }, guest: { hidden2 }, profile: { hidden3} }) => ({
-    hidden, hidden2
+  const mapStateToProps = ({  location: { hidden }, guest: { hidden2 }, profile: { hidden3 } , language: { hidden4 }}  ) => ({
+    hidden, hidden2, hidden4
   });
 
 
