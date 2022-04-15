@@ -16,7 +16,7 @@ import { connect } from 'react-redux';
 
 import "./header.styles.scss";
 
-const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden , hidden4}) => {
+const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }) => {
     const [header, setHeader] = useState("header");
     const listenScrollEvent = event => {
         if (window.scrollY < 73) {
@@ -41,37 +41,39 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden , hidden4}
                 <div className="link-item">Online Experiences</div>
             </ul>
             <div className="hosts">
-                        <div className="host" to="/become a host">
-                            Become a Host
-                        </div>
+                <div className="host" to="/become a host">
+                    Become a Host
+                </div>
 
-                        <div className="language" onClick={toggleLanguageHidden}>
-                            <IoIosGlobe size="1.5em" color="grey" />
-                        </div>
-                        <div className="profile-line" onClick={toggleProfileHidden}>
-                            <div className="three-line">
-                                <IoReorderThreeOutline size="1.5em" color="grey" />
-                            </div>
+                <div className="language" onClick={toggleLanguageHidden}>
+                    <IoIosGlobe size="1.5em" color="grey" />
+                </div>
+                <div className="profile-line" onClick={toggleProfileHidden}>
+                    <div className="three-line">
+                        <IoReorderThreeOutline size="1.5em" color="grey" />
+                    </div>
+                    <div className="profile">
+                        <CgProfile size="1.5em" color="grey" />
+                    </div>
+
+                </div>
+            </div>
+            <div className="box3" onClick={toggleProfileHidden} >
+                {
+                    hidden3 ? null :
+                        (<div className="box5">
+
                             <div className="profile">
-                                <CgProfile size="1.5em" color="grey" />
+                                <div className="profile1"><h4>Sign Up</h4></div>
+                                <div className="profile2"><h4>Log in</h4></div> <hr />
+                                <div className="profile3"><h4>Host your home</h4></div>
+                                <div className="profile4"><h4>Host an exprience</h4></div>
+                                <div className="profile5"><h4>Help</h4></div>
                             </div>
 
-                        </div>
-                    </div>
-                    {
-                        hidden3 ? null : 
-                    (<div className="box5">
-                     <div className="box3">
-                        <div className="profile">
-                            <div className="profile1"><h4>Sign Up</h4></div>
-                            <div className="profile2"><h4>Log in</h4></div> <hr />
-                            <div className="profile3"><h4>Host your home</h4></div>
-                            <div className="profile4"><h4>Host an exprience</h4></div>
-                            <div className="profile5"><h4>Help</h4></div>
-                        </div>
-                    </div>
-                    </div>)
-}
+                        </div>)
+                }
+            </div>
         </header>
     );
 }
@@ -82,7 +84,7 @@ const mapDispatchToProps = dispatch => ({
 })
 
 
-const mapStateToProps = ({ profile: { hidden3 } , language: { hidden4 }}) => ({
+const mapStateToProps = ({ profile: { hidden3 }, language: { hidden4 } }) => ({
     hidden3, hidden4
 });
 

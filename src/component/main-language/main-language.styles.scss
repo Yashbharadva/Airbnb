@@ -1,27 +1,50 @@
-.box4{
+.box4 {
     background-color: #ffffff;
-    height: 71rem;
+    height: 41rem;
     width: 61rem;
-    border-radius: 15px;
+    border-radius: 20px;
     border: 1px solid black;
-    margin-left: 28rem;
+    margin-left: 27rem;
     margin-top: -285rem;
+    position: absolute;
     overflow: scroll;
 
-    .main-three{
-        font-size: 20px;
+    .tra-span {
+        
         margin-top: 2rem;
+        margin-left: 2rem;
+        width: 50%;
+        padding: 15px 5px;
+        border-radius: 8px;
+        background-color: rgb(247, 247, 247);
+
+        .translation {
+            margin-left: 1rem;
+            font-size: 18px;
+            margin-bottom: 0.5rem;
+        }
+
+        .span {
+            margin-left: 1rem;
+            font-size: 14px;
+            color: gray;
+        }
+    }
+
+    .main-three {
+        font-size: 20px;
+        margin-top: 4rem;
         margin-left: 2rem;
         font-weight: bold;
     }
 
-    .english{
+    .english {
         display: flex;
     }
 
-   
 
-    .region{
+
+    .region {
         font-size: 20px;
         margin-bottom: 3rem;
         margin-left: 2rem;
@@ -29,11 +52,10 @@
         font-weight: bold;
     }
 
-.main-region{
+    .main-region {
         padding: 0px 10px;
         column-count: 5;
         justify-content: space-between;
-        
-}
-}
 
+    }
+}
