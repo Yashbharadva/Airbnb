@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './component/header/header.component';
 import SearchBox from './component/search-box/search-box.component';
 import Banner from './component/banner/banner.component';
@@ -14,11 +13,19 @@ import { connect } from 'react-redux';
 import Guest from './component/guest/guest.component';
 import ProfileDropdown from './component/profile-dropdown/profile-dropdown.component';
 import MainLanguage from './component/main-language/main-language.component';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import moment from 'moment';
 
 import './App.css';
+import { useState } from 'react';
 
 
 const App = ({hidden, hidden2, hidden3, hidden4}) => {
+  const [dateState, setDateState] = useState(new Date())
+  const changeDate = (e) => {
+    setDateState(e)
+  }
   return(
     <>
     <Header />
@@ -32,6 +39,9 @@ const App = ({hidden, hidden2, hidden3, hidden4}) => {
     <Footer />
     <Lower />
     <ProfileDropdown />
+    <Calendar 
+    value={dateState}
+    onChange={changeDate}/>
     
     {
       hidden ? null : <Locationdrop />

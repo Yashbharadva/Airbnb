@@ -34,7 +34,10 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
 
     return (
         <header className={header}>
-            <div className="logo"><SiAirbnb size="1.3em" />airbnb</div>
+            <div className="logo">
+            <a href="/help/home?from=footer">
+                <SiAirbnb size="1.3em" />airbnb
+                </a></div>
             <ul className="links">
                 <div className="link-item">Place to Stay</div>
                 <div className="link-item">Experiences</div>
