@@ -13,20 +13,20 @@ import { connect } from 'react-redux';
 import Guest from './component/guest/guest.component';
 import ProfileDropdown from './component/profile-dropdown/profile-dropdown.component';
 import MainLanguage from './component/main-language/main-language.component';
-import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import moment from 'moment';
-
-import './App.css';
+import DateRangeFilter from './component/filter/DateRangeFilter.component';
 import { useState } from 'react';
 
+import './App.css';
 
-const App = ({hidden, hidden2, hidden3, hidden4}) => {
-  const [dateState, setDateState] = useState(new Date())
-  const changeDate = (e) => {
-    setDateState(e)
+
+const App = ({hidden, hidden2, hidden3, hidden4, hidden6}) => {
+  const [index, setIndex] = useState(1);
+  const onChange = (ranges) => {
+    console.log(ranges);
   }
   return(
+    
     <>
     <Header />
     <SearchBox />
@@ -39,9 +39,7 @@ const App = ({hidden, hidden2, hidden3, hidden4}) => {
     <Footer />
     <Lower />
     <ProfileDropdown />
-    <Calendar 
-    value={dateState}
-    onChange={changeDate}/>
+    
     
     {
       hidden ? null : <Locationdrop />
@@ -54,13 +52,19 @@ const App = ({hidden, hidden2, hidden3, hidden4}) => {
     },
     {
       hidden4 ? null : <MainLanguage />
+    },
+    <div className='cal1'>
+
+    {
+      hidden6 ? null : <DateRangeFilter onChange={onChange} />
     }
+    </div>
     </>
   )
   };
 
-  const mapStateToProps = ({  location: { hidden }, guest: { hidden2 }, profile: { hidden3 } , language: { hidden4 }}  ) => ({
-    hidden, hidden2, hidden4
+  const mapStateToProps = ({  location: { hidden }, guest: { hidden2 }, profile: { hidden3 } , language: { hidden4 }, calendar: { hidden6 }}  ) => ({
+    hidden, hidden2, hidden4, hidden6
   });
 
 

@@ -12,21 +12,21 @@ import { IoIosSwitch } from 'react-icons/io';
 import { AiOutlineClose } from 'react-icons/ai';
 import { connect } from "react-redux";
 
-const MainLanguage = ({ setOpenModal }) => {
+const MainLanguage = ({ hidden4 }) => {
     const [languagedata] = useState(LANGUAGE_DATA);
     const [languagedata2] = useState(LANGUAGE_DATAA);
     const [currencydata] = useState(CURRENCT_DATA);
     const [index, setIndex] = useState(1);
-    const [modalOpen, setModalOpen] = useState(false);
     return (
         <div className="box4">
             <div className="close">
-                <button onClick={() => {
-                    setOpenModal(false);
-                }}> <AiOutlineClose /></button>
-                {
-            modalOpen && <MainLanguage className="modal-center" setOpenModal={setModalOpen} />
-          }
+
+                 <AiOutlineClose />
+                 {
+                     hidden4 ? '' : <MainLanguage />
+                 }
+
+
             </div>
             <div className="main-tab">
                     <div className="men-fath" onClick={() => { setIndex(1) }} >

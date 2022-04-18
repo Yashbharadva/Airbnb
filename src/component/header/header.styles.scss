@@ -12,49 +12,38 @@
     transform: translateY(0);
     transition: transform 6s ease;
 
-
     .logo {
         margin-left: 6rem;
         color: white;
         cursor: pointer;
 
-        a{
+        a {
             color: white;
             text-decoration: none;
         }
     }
 
-
-
     .profile-links {
         display: flex;
         color: white;
         cursor: pointer;
-        // margin-left: -60rem;
-
-
-
 
         .profile-item1 {
             width: auto;
             margin: 0rem 15rem;
             margin-left: -12rem;
         }
-
         .profile-item2 {
             width: auto;
             margin: 0rem 15rem;
             margin-left: -13rem;
         }
-
         .profile-item3 {
             width: auto;
             margin: 0rem 10rem;
             margin-left: -13rem;
         }
     }
-
-
     .box3 {
         color: black;
         width: 10%;
@@ -62,8 +51,6 @@
         margin-left: -12rem;
         cursor: pointer;
     }
-
-
     .box5 {
 
         background-color: white;
@@ -75,15 +62,9 @@
         border-radius: 20px;
         cursor: pointer;
 
-
-
-
-
         .profile {
             font-size: 14px;
             padding: 0px 10px;
-
-
 
             .profile1 {
                 padding: 0.5px 5px;
@@ -138,12 +119,7 @@
                 }
             }
         }
-
-
-
     }
-
-
     .hosts {
         width: 34%;
         height: 128px;
@@ -157,7 +133,6 @@
             height: 25px;
             padding: 15px;
             cursor: pointer;
-
         }
 
         .profile-line {
@@ -182,12 +157,7 @@
                 margin-top: 0.2rem;
                 cursor: pointer;
             }
-
-
         }
-
-
-
         .host {
             padding: 10px 15px;
             cursor: pointer;
@@ -204,15 +174,7 @@
             }
         }
     }
-
 }
-
-
-
-
-
-
-
 .header2 {
     position: fixed;
     top: 0;
@@ -247,7 +209,6 @@
     }
 }
 
-
 .header.shadow {
     box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
 }
@@ -263,7 +224,7 @@
     margin-left: 6rem;
     cursor: pointer;
 
-    a{
+    a {
         color: red;
         text-decoration: none;
     }
@@ -275,7 +236,6 @@
     display: flex;
     width: auto;
 
-
     .link-item {
         width: 20rem;
         cursor: pointer;
@@ -283,8 +243,6 @@
         margin: 0rem -10rem;
         margin-left: 5rem;
     }
-
-
 }
 
 .hosts {
@@ -301,8 +259,6 @@
         height: 25px;
         padding: 15px;
         cursor: pointer;
-
-
     }
 
     .profile-line {
@@ -326,12 +282,7 @@
             margin-top: 0.2rem;
             cursor: pointer;
         }
-
-
     }
-
-
-
     .host {
         padding: 10px 15px;
         cursor: pointer;
@@ -339,7 +290,6 @@
         padding: 10px;
         border-radius: 10px;
         color: black;
-
 
         &:hover {
             cursor: pointer;
@@ -359,7 +309,6 @@
     cursor: pointer;
 }
 
-
 .box5 {
 
     background-color: white;
@@ -371,15 +320,9 @@
     border-radius: 20px;
     cursor: pointer;
 
-
-
-
-
     .profile {
         font-size: 14px;
         padding: 0px 10px;
-
-
 
         .profile1 {
             padding: 0.5px 5px;
@@ -434,7 +377,4 @@
             }
         }
     }
-
-
-
 }

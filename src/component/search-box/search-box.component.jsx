@@ -3,14 +3,28 @@ import { connect } from 'react-redux';
 import { toggleLocationHidden } from '../../Redux/location/location.actions';
 import { toggleGuestHidden } from '../../Redux/guest/guest.actions';
 import './search-box.styles.scss';
-import Calendar from 'react-calendar';
+import { toggleCalendarHidden } from '../../Redux/calendar/calendar.actions';
 import 'react-calendar/dist/Calendar.css';
+import 'react-date-range/dist/styles.css';
+import 'react-date-range/dist/theme/default.css';
 
-const SearchBox = ({ toggleLocationHidden, toggleGuestHidden }) => {
-    // const [dateState, setDateState] = useState(new Date())
-    // const changeDate = (e) => {
-    //     setDateState(e)
+
+const SearchBox = ({ toggleLocationHidden, toggleGuestHidden, toggleCalendarHidden }) => {
+    // const [startDate,setStartDate] = useState(new Date());
+    // const [endDate,setEndDate] = useState(new Date());
+
+    // const selectionRange = {
+    //     startDate: startDate,
+    //     endDate: endDate,
+    //     key: 'Selection'
     // }
+    const [dateState, setDateState] = useState(new Date())
+    
+    const changeDate = (e) => {
+       
+        setDateState(e)
+    }
+
     return (
         <div className="searchmain">
             <div className="searchbox">
@@ -19,35 +33,35 @@ const SearchBox = ({ toggleLocationHidden, toggleGuestHidden }) => {
                     <h5>Where are you going?</h5>
                 </div>
 
-                <div className="location1">
-                    {/* <Calendar value={dateState}
-                    onChange={changeDate} /> */}
+                <div className="location1" onClick={toggleCalendarHidden}>
                     <h4>Check in </h4>
                     <h5>Add dates</h5>
-                    
                 </div>
 
-                <div className="location2"
-                typeof='search'><h4>Check out </h4>
+                <div className="location2" onClick={toggleCalendarHidden}>
+                    <h4>Check out </h4>
                     <h5>Add dates</h5>
                 </div>
+                
 
                 <div className="location3" onClick={toggleGuestHidden}>
                     <h4>Guests</h4>
                     <h5>Add guests</h5>
                 </div>
+
             </div>
-
         </div>
-
     )
 }
 
+
+
 const mapDispatchToProps = dispatch => ({
     toggleLocationHidden: () => dispatch(toggleLocationHidden()),
-    toggleGuestHidden: () => dispatch(toggleGuestHidden())
-    
-    
+    toggleGuestHidden: () => dispatch(toggleGuestHidden()),
+    toggleCalendarHidden: () => dispatch(toggleCalendarHidden())
+
+
 })
 
 export default connect(null, mapDispatchToProps)(SearchBox);

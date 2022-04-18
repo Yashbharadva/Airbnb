@@ -1,6 +1,7 @@
 .searchmain {
     background-color: black;
     width: 100%;
+    
 
     .searchbox {
         margin-left: 26rem;
@@ -86,6 +87,12 @@
 
             }
         }
+    }
+    .calendar{
+        margin-left: -30.5rem;
+        margin-top: 7.5rem;
+        z-index: 1;
+        position: absolute;
     }
 }
 
