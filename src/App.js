@@ -15,13 +15,13 @@ import ProfileDropdown from './component/profile-dropdown/profile-dropdown.compo
 import MainLanguage from './component/main-language/main-language.component';
 import 'react-calendar/dist/Calendar.css';
 import DateRangeFilter from './component/filter/DateRangeFilter.component';
-import { useState } from 'react';
+import Date from './component/carousel/carousel.component';
 
 import './App.css';
 
 
 const App = ({hidden, hidden2, hidden3, hidden4, hidden6}) => {
-  const [index, setIndex] = useState(1);
+  
   const onChange = (ranges) => {
     console.log(ranges);
   }
@@ -39,7 +39,7 @@ const App = ({hidden, hidden2, hidden3, hidden4, hidden6}) => {
     <Footer />
     <Lower />
     <ProfileDropdown />
-    
+    <Date />
     
     {
       hidden ? null : <Locationdrop />
@@ -54,7 +54,6 @@ const App = ({hidden, hidden2, hidden3, hidden4, hidden6}) => {
       hidden4 ? null : <MainLanguage />
     },
     <div className='cal1'>
-
     {
       hidden6 ? null : <DateRangeFilter onChange={onChange} />
     }

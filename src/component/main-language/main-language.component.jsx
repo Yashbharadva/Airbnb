@@ -10,9 +10,8 @@ import CURRENCT_DATA from "../../currencydata";
 import { BsTranslate } from "react-icons/bs";
 import { IoIosSwitch } from 'react-icons/io';
 import { AiOutlineClose } from 'react-icons/ai';
-import { connect } from "react-redux";
 
-const MainLanguage = ({ hidden4 }) => {
+const MainLanguage = () => {
     const [languagedata] = useState(LANGUAGE_DATA);
     const [languagedata2] = useState(LANGUAGE_DATAA);
     const [currencydata] = useState(CURRENCT_DATA);
@@ -20,13 +19,7 @@ const MainLanguage = ({ hidden4 }) => {
     return (
         <div className="box4">
             <div className="close">
-
                  <AiOutlineClose />
-                 {
-                     hidden4 ? '' : <MainLanguage />
-                 }
-
-
             </div>
             <div className="main-tab">
                     <div className="men-fath" onClick={() => { setIndex(1) }} >
@@ -76,10 +69,4 @@ const MainLanguage = ({ hidden4 }) => {
     )
 }
 
-
-const mapStateToProps = ({ language: { hidden4 } }) => ({
-     hidden4
-});
-
-
-export default connect(mapStateToProps)(MainLanguage);
+export default MainLanguage;

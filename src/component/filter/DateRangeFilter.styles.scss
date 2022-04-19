@@ -1,12 +1,108 @@
 .cal1{
-    margin-top: 15rem;
-
+    background-color: white;
+    width: 72rem;
+    border-radius: 50px;
+    padding: -10rem -10rem;
+    position: relative;
+    margin-top: 50rem;
+    
     .cal2{
         display: flex;
         cursor: pointer;
+        justify-content: center;
+        margin-left: 20rem;
+        margin-bottom: 2rem;
+        background-color: rgb(234, 234, 234);
+        margin-right: 35rem;
+        border-radius: 99px;
+        padding: -2rem;
+
+        .cal4{
+            padding: 10px 10px;
+            border-radius: 25px;
+            background-color: white;
+             &:hover{
+                 background-color: rgb(220, 220, 220);
+             }
+        }
 
         .cal6{
             margin-left: 1.5rem;
+            padding: 10px 10px;
+            border-radius: 25px;
+            background-color: white;
+
+            &:hover{
+                background-color: rgb(220, 220, 220);
+            }
         }
+    }
+.main-traas{
+    height: 24rem;
+
+    .days{
+        display: flex;
+        margin-left: 20rem;
+        margin-top: 2rem;
+        
+
+        .weekend{
+            margin-right: 2rem;
+            padding: 5px 10px;
+            border-radius: 50px;
+            background-color: rgb(234, 234, 234);
+            cursor: pointer;
+
+            &:hover{
+                border: 1px solid black;
+                transition: transform 0.75s ease-out;
+                transform: scale(1.1);
+            }
+        }
+
+        .week{
+            padding: 5px 10px;
+            border-radius: 50px;
+            background-color: rgb(234, 234, 234);
+            cursor: pointer;
+
+            &:hover{
+                border: 1px solid black;
+                transition: transform 0.75s ease-out;
+                transform: scale(1.1);
+            }
+        }
+
+        .month{
+            margin-left: 2rem;
+            padding: 5px 10px;
+            border-radius: 50px;
+            background-color: rgb(234, 234, 234);
+            cursor: pointer;
+
+            &:hover{
+                border: 1px solid black;
+                transition: transform 0.75s ease-out;
+                transform: scale(1.1);
+            }
+        }
+
+       
+
+    }
+
+    .kgf{
+        font-size: 22px;
+        font-weight: 200;
+        margin-left: 21.5rem;
+        margin-top: 2rem;
+    }
+}
+
+
+    .stay{
+        font-size: 22px;
+        font-weight: 200;
+        margin-left: 20rem;
     }
 }

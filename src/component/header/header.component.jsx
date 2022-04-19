@@ -28,7 +28,6 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
 
     useEffect(() => {
         window.addEventListener("scroll", listenScrollEvent);
-
         return () => window.removeEventListener("scroll", listenScrollEvent);
     }, []);
 
@@ -87,7 +86,7 @@ const mapDispatchToProps = dispatch => ({
 })
 
 
-const mapStateToProps = ({ profile: { hidden3 }, language: { hidden4 } }) => ({
+const mapStateToProps = ({ profile: { hidden3 } , language: { hidden4 } }) => ({
     hidden3, hidden4
 });
 

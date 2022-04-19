@@ -5,6 +5,8 @@ import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { DateRangePicker } from "react-date-range";
 import { addDays, subDays } from "date-fns";
+import Date from "../carousel/carousel.component";
+import DateScroll from "../Date-scroll/date-scroll.component";
 
 const DateRangeFilter = ({ onChange }) => {
   const [index, setIndex] = useState(1);
@@ -32,7 +34,7 @@ const DateRangeFilter = ({ onChange }) => {
         <h4 className="cal6"> I'm flexible </h4>
         </div>
         </div>
-        <div className="main-tra" hidden={ index !== 1 }>
+        <div className="main-calendar" hidden={ index !== 1 }>
           <div className="box6"> </div>
       <DateRangePicker
         onChange={handleOnChange}
@@ -43,7 +45,29 @@ const DateRangeFilter = ({ onChange }) => {
         direction="horizontal"
       />
       </div>
-    
+      <div className="main-traas" hidden={ index !== 2 }>
+        <div className="stay">
+          How long would you like to stay?
+        </div>
+        <div className="days">
+          <div className="weekend">
+            Weekend
+          </div>
+          <div className="week">
+            Week
+          </div>
+          <div className="month">
+            Month
+          </div>
+        </div>
+        <div className="plan">
+
+        </div>
+        <div className="kgf">
+        When do you want to go?
+        <Date />
+      </div>
+      </div> 
     </div>
   );
 };
