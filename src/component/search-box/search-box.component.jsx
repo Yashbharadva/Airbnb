@@ -19,10 +19,8 @@ const SearchBox = ({ toggleLocationHidden, toggleGuestHidden, toggleCalendarHidd
     //     key: 'Selection'
     // }
     const [dateState, setDateState] = useState(new Date())
-    
     const changeDate = (e) => {
-       
-        setDateState(e)
+        setDateState(e);
     }
 
     return (

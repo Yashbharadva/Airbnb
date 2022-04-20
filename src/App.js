@@ -18,53 +18,55 @@ import DateRangeFilter from './component/filter/DateRangeFilter.component';
 import Date from './component/carousel/carousel.component';
 
 import './App.css';
+import { useState } from 'react';
 
 
-const App = ({hidden, hidden2, hidden3, hidden4, hidden6}) => {
-  
+
+const App = ({ hidden, hidden2, hidden3, hidden4, hidden6 }) => {
+  const [modalOpen, setModalOpen] = useState(false);
   const onChange = (ranges) => {
     console.log(ranges);
   }
-  return(
-    
+  return (
+
     <>
-    <Header />
-    <SearchBox />
-    <Banner />
-    <Booking />
-    <Trip />
-    <Main />
-    <Experiences />
-    <Question/>
-    <Footer />
-    <Lower />
-    <ProfileDropdown />
-    <Date />
-    
-    {
-      hidden ? null : <Locationdrop />
-    },
-    {
-      hidden2 ? null : <Guest />
-    },
-    {
-      hidden3 ? null : <header />
-    },
-    {
-      hidden4 ? null : <MainLanguage />
-    },
-    <div className='cal1'>
-    {
-      hidden6 ? null : <DateRangeFilter onChange={onChange} />
-    }
-    </div>
+      <Header />
+      <SearchBox />
+      <Banner />
+      <Booking />
+      <Trip />
+      <Main />
+      <Experiences />
+      <Question />
+      <Footer />
+      <Lower />
+      <ProfileDropdown />
+      <Date />
+
+      {
+        hidden ? null : <Locationdrop />
+      },
+      {
+        hidden2 ? null : <Guest />
+      },
+      {
+        hidden3 ? null : <header />
+      },
+      {
+        hidden4 ? null : <MainLanguage />
+      },
+      <div className='cal1'>
+        {/* {
+          hidden6 ? null : <DateRangeFilter onChange={onChange} />
+        } */}
+      </div>
     </>
   )
-  };
+};
 
-  const mapStateToProps = ({  location: { hidden }, guest: { hidden2 }, profile: { hidden3 } , language: { hidden4 }, calendar: { hidden6 }}  ) => ({
-    hidden, hidden2, hidden4, hidden6
-  });
+const mapStateToProps = ({ location: { hidden }, guest: { hidden2 }, profile: { hidden3 }, language: { hidden4 }, calendar: { hidden6 } }) => ({
+  hidden, hidden2, hidden4, hidden6
+});
 
 
 export default connect(mapStateToProps)(App);

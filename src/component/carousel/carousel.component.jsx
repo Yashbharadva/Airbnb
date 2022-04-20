@@ -7,15 +7,15 @@ import DateScroll from "../Date-scroll/date-scroll.component";
 const Date = () => {
     const [items] = useState(DATE_DATA);
     const breakPoints = [{
-        width: 1, itemsToShow: 5
+        width: 1, itemsToShow: 3
     }];
     return(
         <div className="date-data">
-            <Carousel breakPoints={breakPoints}>
+            {/* <Carousel breakPoints={breakPoints}>
                 {
                     items.map((item)=> (<DateScroll key={item.id} item={item} />))
                 }
-            </Carousel>
+            </Carousel> */}
         </div>
     )
 };
