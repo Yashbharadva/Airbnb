@@ -1,49 +1,50 @@
-.cal1{
+.maindaterange{
+    margin-left: 27rem;
+    margin-top: -280rem;
     background-color: white;
-    width: 72rem;
+    width: 62rem;
+    position: absolute;
     border-radius: 50px;
-    padding: -10rem -10rem;
-    position: relative;
-    margin-top: 50rem;
-    
-    .cal2{
-        display: flex;
+    height: 35rem;
+
+    .main-tab{
         cursor: pointer;
-        justify-content: center;
-        margin-left: 20rem;
-        margin-bottom: 2rem;
-        background-color: rgb(234, 234, 234);
-        margin-right: 35rem;
-        border-radius: 99px;
-        padding: -2rem;
+        display: flex;
+        margin-left: 25rem;
+        margin-bottom: 3rem;
 
-        .cal4{
-            padding: 10px 10px;
-            border-radius: 25px;
-            background-color: white;
-             &:hover{
-                 background-color: rgb(220, 220, 220);
-             }
-        }
-
-        .cal6{
-            margin-left: 1.5rem;
-            padding: 10px 10px;
-            border-radius: 25px;
-            background-color: white;
-
-            &:hover{
-                background-color: rgb(220, 220, 220);
-            }
-        }
+    .tab{
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 2rem;
     }
-.main-traas{
-    height: 24rem;
+
+    .tab2{
+        font-size: 20px;
+        font-weight: 300;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+    .daterange{
+        color: black;
+        height: 25rem;
+        width: 60rem;
+        background-color: white;
+    }
+
+    .stay{
+        margin-top: -25rem;
+        font-size: 25px;
+        font-weight: 200;
+        margin-left: 21.2rem;
+    }
 
     .days{
         display: flex;
-        margin-left: 20rem;
-        margin-top: 2rem;
+        margin-left: 22.5rem;
+        margin-top: 3rem;
         
 
         .weekend{
@@ -94,15 +95,7 @@
     .want{
         font-size: 22px;
         font-weight: 200;
-        margin-left: 21.5rem;
-        margin-top: 2rem;
-    }
-}
-
-
-    .stay{
-        font-size: 22px;
-        font-weight: 200;
-        margin-left: 20rem;
+        margin-left: 24rem;
+        margin-top: 3rem;
     }
 }

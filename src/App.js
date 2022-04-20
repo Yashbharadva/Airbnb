@@ -42,6 +42,7 @@ const App = ({ hidden, hidden2, hidden3, hidden4, hidden6 }) => {
       <Lower />
       <ProfileDropdown />
       <Date />
+      <DateRangeFilter onChange={onChange}/>
 
       {
         hidden ? null : <Locationdrop />
@@ -54,12 +55,7 @@ const App = ({ hidden, hidden2, hidden3, hidden4, hidden6 }) => {
       },
       {
         hidden4 ? null : <MainLanguage />
-      },
-      <div className='cal1'>
-        {/* {
-          hidden6 ? null : <DateRangeFilter onChange={onChange} />
-        } */}
-      </div>
+      }
     </>
   )
 };

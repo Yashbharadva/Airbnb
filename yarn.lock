@@ -7842,7 +7842,7 @@ react-calendar@^3.7.0:
 
 react-date-range@^1.4.0:
   version "1.4.0"
-  resolved "https://registry.npmjs.org/react-date-range/-/react-date-range-1.4.0.tgz"
+  resolved "https://registry.yarnpkg.com/react-date-range/-/react-date-range-1.4.0.tgz#d2073b85bdb4185e4dde288ce29198dd90074045"
   integrity sha512-+9t0HyClbCqw1IhYbpWecjsiaftCeRN5cdhsi9v06YdimwyMR2yYHWcgVn3URwtN/txhqKpEZB6UX1fHpvK76w==
   dependencies:
     classnames "^2.2.6"
@@ -7964,7 +7964,7 @@ react-router@6.3.0:
 
 react-scripts@^5.0.1:
   version "5.0.1"
-  resolved "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-5.0.1.tgz#6285dbd65a8ba6e49ca8d651ce30645a6d980003"
   integrity sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ==
   dependencies:
     "@babel/core" "^7.16.0"
