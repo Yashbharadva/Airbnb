@@ -42,7 +42,6 @@ const App = ({ hidden, hidden2, hidden3, hidden4, hidden6 }) => {
       <Lower />
       <ProfileDropdown />
       <Date />
-      <DateRangeFilter onChange={onChange}/>
 
       {
         hidden ? null : <Locationdrop />
@@ -55,12 +54,18 @@ const App = ({ hidden, hidden2, hidden3, hidden4, hidden6 }) => {
       },
       {
         hidden4 ? null : <MainLanguage />
+      },
+      {
+        hidden6 ? null : <DateRangeFilter onChange={onChange} />
       }
     </>
   )
 };
 
-const mapStateToProps = ({ location: { hidden }, guest: { hidden2 }, profile: { hidden3 }, language: { hidden4 }, calendar: { hidden6 } }) => ({
+const mapStateToProps = ({ location: { hidden }, 
+  guest: { hidden2 }, 
+  language: { hidden4 }, 
+  calendar: { hidden6 } }) => ({
   hidden, hidden2, hidden4, hidden6
 });
 

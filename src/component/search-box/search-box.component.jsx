@@ -46,7 +46,6 @@ const SearchBox = ({ toggleLocationHidden, toggleGuestHidden, toggleCalendarHidd
                     <h4>Guests</h4>
                     <h5>Add guests</h5>
                 </div>
-
             </div>
         </div>
     )
