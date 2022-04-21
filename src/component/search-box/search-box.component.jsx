@@ -1,45 +1,36 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { toggleLocationHidden } from '../../Redux/location/location.actions';
-import { toggleGuestHidden } from '../../Redux/guest/guest.actions';
-import './search-box.styles.scss';
-import { toggleCalendarHidden } from '../../Redux/calendar/calendar.actions';
+import { toggleLocationHidden } from '../../Redux/All/all.actions';
+import { toggleGuestHidden } from '../../Redux/All/all.actions';
+import { toggleCalendarHidden } from '../../Redux/All/all.actions';
 import 'react-calendar/dist/Calendar.css';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
-import Locationdrop from '../location-dropdown/location-dropdown.component';
+import './search-box.styles.scss';
 
-
-const SearchBox = ({ toggleLocationHidden, toggleGuestHidden, toggleCalendarHidden, hidden6 }) => {
-    const [show, setShow] = useState('')
+const SearchBox = ({ toggleLocationHidden, toggleGuestHidden, toggleCalendarHidden }) => {
     const [dateState, setDateState] = useState(new Date())
     const changeDate = (e) => {
         setDateState(e);
     }
-
+    
     return (
         <div className="searchmain">
             <div className="searchbox">
                 <div className="location" onClick={toggleLocationHidden}>
                     <h4>Location</h4>
                     <h5>Where are you going?</h5>
-                    
                 </div>
-
-
-                {show && <div onClick={toggleLocationHidden}></div>}
+                
                 <div className="location1" onClick={toggleCalendarHidden}> 
                     <h4>Check in </h4>
                     <h5>Add dates</h5>
                 </div>
-
                 
-
                 <div className="location2" onClick={toggleCalendarHidden}>
                     <h4>Check out </h4>
                     <h5>Add dates</h5>
                 </div>
-
 
                 <div className="location3" onClick={toggleGuestHidden}>
                     <h4>Guests</h4>

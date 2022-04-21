@@ -8,15 +8,15 @@ import { IoReorderThreeOutline } from 'react-icons/io5';
 
 import { CgProfile } from 'react-icons/cg';
 
-import { toggleProfileHidden } from "../../Redux/profile/profile.actions";
+import { toggleProfileHidden } from '../../Redux/All/all.actions';
 
-import { toggleLanguageHidden } from "../../Redux/language/language.actions";
+import { toggleLanguageHidden } from '../../Redux/All/all.actions';
 
 import { connect } from 'react-redux';
 
 import "./header.styles.scss";
 
-const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }) => {
+const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4}) => {
     const [header, setHeader] = useState("header");
     const listenScrollEvent = event => {
         if (window.scrollY < 73) {
@@ -86,7 +86,7 @@ const mapDispatchToProps = dispatch => ({
 })
 
 
-const mapStateToProps = ({ profile: { hidden3 } , language: { hidden4 } }) => ({
+const mapStateToProps = ({ profile: { hidden3 },  language: { hidden4 } }) => ({
     hidden3, hidden4
 });
 

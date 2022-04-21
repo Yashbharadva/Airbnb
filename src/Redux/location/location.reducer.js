@@ -8,12 +8,13 @@ const INITIAL_STATE = {
 const locationReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case LocationActionTypes.TOGGLE_LOCATION_HIDDEN:
-            return{
+            return {
                 ...state,
                 hidden: !state.hidden
             }
-            default:
-                return state;
+        default:
+            return state;
+
     }
 };
 

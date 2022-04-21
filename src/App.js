@@ -16,14 +16,11 @@ import MainLanguage from './component/main-language/main-language.component';
 import 'react-calendar/dist/Calendar.css';
 import DateRangeFilter from './component/filter/DateRangeFilter.component';
 import Date from './component/carousel/carousel.component';
-
 import './App.css';
-import { useState } from 'react';
 
 
 
-const App = ({ hidden, hidden2, hidden3, hidden4, hidden6 }) => {
-  const [modalOpen, setModalOpen] = useState(false);
+const App = ({ hidden, hidden2, hidden4, hidden6 }) => {
   const onChange = (ranges) => {
     console.log(ranges);
   }
@@ -50,9 +47,6 @@ const App = ({ hidden, hidden2, hidden3, hidden4, hidden6 }) => {
         hidden2 ? null : <Guest /> 
       },
       {
-        hidden3 ? null : <header />
-      },
-      {
         hidden4 ? null : <MainLanguage />
       },
       {
@@ -63,10 +57,10 @@ const App = ({ hidden, hidden2, hidden3, hidden4, hidden6 }) => {
   )
 };
 
-const mapStateToProps = ({ location: { hidden },
-  guest: { hidden2 },
-  language: { hidden4 },
-  calendar: { hidden6 } }) => ({
+const mapStateToProps = ({ all: { hidden },
+  all: { hidden2 },
+  all: { hidden4 },
+  all: { hidden6 } }) => ({
     hidden, hidden2, hidden4, hidden6
   });
 
