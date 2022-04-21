@@ -47,7 +47,7 @@ const App = ({ hidden, hidden2, hidden3, hidden4, hidden6 }) => {
         hidden ? null : <Locationdrop />
       },
       {
-        hidden2 ? null : <Guest />
+        hidden2 ? null : <Guest /> 
       },
       {
         hidden3 ? null : <header />
@@ -57,17 +57,18 @@ const App = ({ hidden, hidden2, hidden3, hidden4, hidden6 }) => {
       },
       {
         hidden6 ? null : <DateRangeFilter onChange={onChange} />
-      }
+      },
+      
     </>
   )
 };
 
-const mapStateToProps = ({ location: { hidden }, 
-  guest: { hidden2 }, 
-  language: { hidden4 }, 
+const mapStateToProps = ({ location: { hidden },
+  guest: { hidden2 },
+  language: { hidden4 },
   calendar: { hidden6 } }) => ({
-  hidden, hidden2, hidden4, hidden6
-});
+    hidden, hidden2, hidden4, hidden6
+  });
 
 
 export default connect(mapStateToProps)(App);
