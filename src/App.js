@@ -18,10 +18,12 @@ import DateRangeFilter from './component/filter/DateRangeFilter.component';
 import Date from './component/carousel/carousel.component';
 import SearchField from './component/search-field/search-field.component';
 import './App.css';
+import { useState } from 'react';
 
 
 
 const App = ({ hidden, hidden2, hidden4, hidden6, hidden7, hidden8 }) => {
+  // const [modalOpen,setModalOpen] = useState(false)
   const onChange = (ranges) => {
     console.log(ranges);
   }
@@ -51,6 +53,9 @@ const App = ({ hidden, hidden2, hidden4, hidden6, hidden7, hidden8 }) => {
       {
         hidden4 ? null : <MainLanguage />
       },
+      {/* {
+      modalOpen && <MainLanguage setOpenModal={setModalOpen} />
+      }, */}
       {
         hidden6 ? null : <DateRangeFilter onChange={onChange} />
       },

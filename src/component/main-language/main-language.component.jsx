@@ -14,7 +14,6 @@ const MainLanguage = ({ setOpenModal }) => {
     const [languagedata] = useState(LANGUAGE_DATA);
     const [languagedata2] = useState(LANGUAGE_DATAA);
     const [currencydata] = useState(CURRENCT_DATA);
-    const [modalOpen, setModalOpen] = useState(false);
     const [index, setIndex] = useState(1);
     return (
         <div className="box4">

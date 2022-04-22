@@ -14,10 +14,15 @@ import { toggleLanguageHidden } from '../../Redux/All/all.actions';
 
 import { connect } from 'react-redux';
 
+import MainLanguage from "../main-language/main-language.component";
+
+import SearchBox from '../../component/search-box/search-box.component';
+
 import "./header.styles.scss";
 
-const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4}) => {
+const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }) => {
     const [header, setHeader] = useState("header");
+    const [modalOpen, setModalOpen] = useState(false)
     const listenScrollEvent = event => {
         if (window.scrollY < 73) {
             return setHeader("header");
@@ -34,14 +39,11 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4})
     return (
         <header className={header}>
             <div className="logo">
-            <a href="/help/home?from=footer">
-                <SiAirbnb size="1.3em" />airbnb
+                <a href="/help/home?from=footer">
+                    <SiAirbnb size="1.3em" />airbnb
                 </a></div>
-               
+
             <ul className="links">
-            {/* <div className="search-animation">
-                    Yash
-                </div> */}
                 <div className="link-item">Place to Stay</div>
                 <div className="link-item">Experiences</div>
                 <div className="link-item">Online Experiences</div>
@@ -53,6 +55,9 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4})
 
                 <div className="language" onClick={toggleLanguageHidden}>
                     <IoIosGlobe size="1.5em" color="grey" />
+                    {
+                        modalOpen && <MainLanguage setOpenModal={setModalOpen} />
+                    }
                 </div>
                 <div className="profile-line" onClick={toggleProfileHidden}>
                     <div className="three-line">
@@ -61,7 +66,7 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4})
                     <div className="profile">
                         <CgProfile size="1.5em" color="grey" />
                     </div>
-
+                    {/* <SearchBox /> */}
                 </div>
             </div>
             <div className="box3" onClick={toggleProfileHidden} >
@@ -90,7 +95,7 @@ const mapDispatchToProps = dispatch => ({
 })
 
 
-const mapStateToProps = ({ profile: { hidden3 },  language: { hidden4 } }) => ({
+const mapStateToProps = ({ profile: { hidden3 }, language: { hidden4 } }) => ({
     hidden3, hidden4
 });
 
