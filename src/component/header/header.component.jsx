@@ -39,9 +39,9 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4})
                 </a></div>
                
             <ul className="links">
-            <div className="search-animation">
+            {/* <div className="search-animation">
                     Yash
-                </div>
+                </div> */}
                 <div className="link-item">Place to Stay</div>
                 <div className="link-item">Experiences</div>
                 <div className="link-item">Online Experiences</div>
