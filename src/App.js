@@ -16,11 +16,12 @@ import MainLanguage from './component/main-language/main-language.component';
 import 'react-calendar/dist/Calendar.css';
 import DateRangeFilter from './component/filter/DateRangeFilter.component';
 import Date from './component/carousel/carousel.component';
+import SearchField from './component/search-field/search-field.component';
 import './App.css';
 
 
 
-const App = ({ hidden, hidden2, hidden4, hidden6 }) => {
+const App = ({ hidden, hidden2, hidden4, hidden6, hidden7, hidden8 }) => {
   const onChange = (ranges) => {
     console.log(ranges);
   }
@@ -39,6 +40,7 @@ const App = ({ hidden, hidden2, hidden4, hidden6 }) => {
       <Lower />
       <ProfileDropdown />
       <Date />
+      
 
       {
         hidden ? null : <Locationdrop />
@@ -52,6 +54,12 @@ const App = ({ hidden, hidden2, hidden4, hidden6 }) => {
       {
         hidden6 ? null : <DateRangeFilter onChange={onChange} />
       },
+      {
+        hidden7 ? null : <DateRangeFilter onChange={onChange} />
+      },
+      {
+        hidden8 ? null : <SearchField />
+      }
       
     </>
   )
@@ -60,8 +68,10 @@ const App = ({ hidden, hidden2, hidden4, hidden6 }) => {
 const mapStateToProps = ({ all: { hidden },
   all: { hidden2 },
   all: { hidden4 },
-  all: { hidden6 } }) => ({
-    hidden, hidden2, hidden4, hidden6
+  all: { hidden6 },
+  all: { hidden7 },
+  all: { hidden8 }}) => ({
+    hidden, hidden2, hidden4, hidden6, hidden7, hidden8
   });
 
 

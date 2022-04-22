@@ -3,10 +3,12 @@ import AllActionTypes from './all.types';
 
 const INITIAL_STATE = {
     hidden6: true, // calendar
+    hidden7: true, // calendar1
     hidden2: true, // guest
     hidden4: true, // language
     hidden: true, // location
-    hidden3: true // profile
+    hidden3: true, // profile
+    hidden8: true // search
 };
 
 const allReducer = (state = INITIAL_STATE, action) => {
@@ -19,6 +21,19 @@ const allReducer = (state = INITIAL_STATE, action) => {
                 hidden2: true,
                 hidden3: true,
                 hidden4: true,
+                hidden7: true,
+                hidden8: true
+            }
+        case AllActionTypes.TOGGLE_CALENDAR1_HIDDEN:
+            return {
+                ...state,
+                hidden7: !state.hidden7,
+                hidden: true,
+                hidden2: true,
+                hidden3: true,
+                hidden4: true,
+                hidden6: true,
+                hidden8: true
             }
         case AllActionTypes.TOGGLE_GUEST_HIDDEN:
             return {
@@ -28,6 +43,8 @@ const allReducer = (state = INITIAL_STATE, action) => {
                 hidden6: true,
                 hidden3: true,
                 hidden4: true,
+                hidden7: true,
+                hidden8: true
             }
         case AllActionTypes.TOGGLE_LANGUAGE_HIDDEN:
             return {
@@ -37,6 +54,8 @@ const allReducer = (state = INITIAL_STATE, action) => {
                 hidden2: true,
                 hidden3: true,
                 hidden6: true,
+                hidden7: true,
+                hidden8: true
             }
         case AllActionTypes.TOGGLE_LOCATION_HIDDEN:
             return {
@@ -46,6 +65,8 @@ const allReducer = (state = INITIAL_STATE, action) => {
                 hidden4: true,
                 hidden2: true,
                 hidden3: true,
+                hidden7: true,
+                hidden8: true
             }
         case AllActionTypes.TOGGLE_PROFILE_HIDDEN:
             return {
@@ -55,6 +76,19 @@ const allReducer = (state = INITIAL_STATE, action) => {
                 hidden2: true,
                 hidden6: true,
                 hidden4: true,
+                hidden7: true,
+                hidden8: true
+            }
+        case AllActionTypes.TOGGLE_FIELD_HIDDEN:
+            return {
+                ...state,
+                hidden8: !state.hidden8,
+                hidden: true,
+                hidden2: true,
+                hidden3: true,
+                hidden6: true,
+                hidden4: true,
+                hidden7: true,
             }
         default:
             return state;

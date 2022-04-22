@@ -37,7 +37,11 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4})
             <a href="/help/home?from=footer">
                 <SiAirbnb size="1.3em" />airbnb
                 </a></div>
+               
             <ul className="links">
+            <div className="search-animation">
+                    Yash
+                </div>
                 <div className="link-item">Place to Stay</div>
                 <div className="link-item">Experiences</div>
                 <div className="link-item">Online Experiences</div>
