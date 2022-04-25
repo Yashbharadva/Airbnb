@@ -16,7 +16,6 @@ import { connect } from 'react-redux';
 
 import MainLanguage from "../main-language/main-language.component";
 
-import SearchBox from '../../component/search-box/search-box.component';
 
 import "./header.styles.scss";
 
@@ -66,7 +65,6 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
                     <div className="profile">
                         <CgProfile size="1.5em" color="grey" />
                     </div>
-                    {/* <SearchBox /> */}
                 </div>
             </div>
             <div className="box3" onClick={toggleProfileHidden} >
