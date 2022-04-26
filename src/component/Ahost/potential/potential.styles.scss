@@ -1,0 +1,40 @@
+.main-potential{
+    background-color:white;
+    height: 640px;
+    width: 650px;
+    margin-left: 120px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: scroll;
+
+    .title-potential{
+        margin-left: 30px;
+        margin-top: 20px;
+        line-height: 80px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .subtitle-potential{
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+
+    li{
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 30px;
+        line-height: 25px;
+    }
+
+    .another{
+        margin-left: 20px;
+        line-height: 25px;
+        margin-top: 40px;
+    }
+
+    .learn{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}

@@ -9,21 +9,13 @@ import "slick-carousel/slick/slick-theme.css";
 import './ahost-carousel.styles.scss';
 import AhostScroll from "../ahost-fetch/ahost-fetch.component";
 import Carousel from 'react-elastic-carousel';
-import HOST_DATA from "../../hostdata";
+import HOST_DATA from "../../../hostdata";
 
 const HostCarousel = () => {
     const [items] = useState(HOST_DATA);
     const breakPoints = [{
         width: 1, itemsToShow: 3
       }];
-    // let settings = {
-    //     dot: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     cssEase: "linear"
-    // }
     return (
         
             <div className="imageforslide">

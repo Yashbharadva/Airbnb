@@ -1,0 +1,80 @@
+.prefer{
+    line-height: 92px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-top: 100px;
+    margin-left: 600px;
+
+    
+
+    .dropdown-btn{
+        font-size: 55px;
+        color: rgb(113, 113, 113);
+        display: flex;
+        cursor: pointer;
+        width: auto;
+
+    }
+
+    .drop-content{
+        z-index: 2;
+        position: absolute;
+        padding: 0px;
+        width: 260px;
+        height: 150px;
+        background-color: white;
+        border: 1px solid black;
+        line-height: 50px;
+        margin-left: 240px;
+        font-size: 25px;
+        overflow: scroll;
+    }
+
+    .droped-item{
+        padding: 0px;
+        cursor: pointer;
+        width: auto;
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+
+    .dropdown-btn2{
+        font-size: 55px;
+        color: rgb(113, 113, 113);
+        display: flex;
+        cursor: pointer;
+        width: auto;
+        margin-left: 625px;
+        margin-top: -90px;
+
+    }
+
+    .drop-content2{
+        z-index: 2;
+        position: absolute;
+        padding: 0px;
+        width: 260px;
+        height: 350px;
+        background-color: white;
+        border: 1px solid black;
+        line-height: 50px;
+        margin-left: 540px;
+        font-size: 25px;
+        overflow: scroll;
+    }
+
+    .droped-item2{
+        padding: 0px;
+        cursor: pointer;
+        width: auto;
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+}

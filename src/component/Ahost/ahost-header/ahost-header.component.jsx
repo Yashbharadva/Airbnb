@@ -48,6 +48,7 @@ const HeaderAhost = () => {
                 height='880px'
                 loop
                 controls
+                
                 url='https://a0.muscache.com/v/a9/a7/a9a7873c-95de-5e37-8995-a5abb5b6b02f/a9a7873c95de5e378995a5abb5b6b02f_4000k_1.mp4'
                 type="video/mp4">
                 </ReactPlayer>

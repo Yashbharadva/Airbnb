@@ -8,6 +8,7 @@ import calendarReducer from "./calendar/calendar.reducer";
 import calendar1Reducer from "./calendar1/calendar1.reducer";
 import allReducer from "./All/all.reducer";
 import fieldReducer from "./field/field.reducer";
+import learnReducer from "./learn/learn.reducer";
 
 export default combineReducers({
     location: locationReducer,
@@ -17,5 +18,6 @@ export default combineReducers({
     calendar: calendarReducer,
     calendar1: calendar1Reducer,
     field: fieldReducer,
+    learn: learnReducer,
     all: allReducer
 });

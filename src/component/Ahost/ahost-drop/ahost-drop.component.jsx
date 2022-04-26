@@ -1,6 +1,6 @@
 import React from "react";
 
-import './host-drop.styles.scss';
+import './ahost-drop.styles.scss';
 
 const HostDrop = () => {
     return(
