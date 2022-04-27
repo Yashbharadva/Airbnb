@@ -27,3 +27,7 @@ export const toggleProfileHidden = () => ({
 export const toggleFieldHidden = () => ({
     type: AllActionTypes.TOGGLE_FIELD_HIDDEN
 });
+
+export const toggleLearnHidden = () => ({
+    type: AllActionTypes.TOGGLE_LEARN_HIDDEN
+});

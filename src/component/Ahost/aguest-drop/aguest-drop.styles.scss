@@ -4,7 +4,7 @@
     font-weight: 500;
     letter-spacing: -0.02em;
     margin-top: 100px;
-    margin-left: 600px;
+    margin-left: 500px;
 
     
 
@@ -14,6 +14,11 @@
         display: flex;
         cursor: pointer;
         width: auto;
+
+        .icon{
+            margin-top: 38px;
+            margin-left: 5px;
+        }
 
     }
 
@@ -35,42 +40,7 @@
         padding: 0px;
         cursor: pointer;
         width: auto;
-
-        &:hover{
-            background-color: black;
-            color: white;
-        }
-    }
-
-    .dropdown-btn2{
-        font-size: 55px;
-        color: rgb(113, 113, 113);
-        display: flex;
-        cursor: pointer;
-        width: auto;
-        margin-left: 625px;
-        margin-top: -90px;
-
-    }
-
-    .drop-content2{
-        z-index: 2;
-        position: absolute;
-        padding: 0px;
-        width: 260px;
-        height: 350px;
-        background-color: white;
-        border: 1px solid black;
-        line-height: 50px;
-        margin-left: 540px;
-        font-size: 25px;
-        overflow: scroll;
-    }
-
-    .droped-item2{
-        padding: 0px;
-        cursor: pointer;
-        width: auto;
+        font-size: 20px;
 
         &:hover{
             background-color: black;

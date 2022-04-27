@@ -8,7 +8,8 @@ const INITIAL_STATE = {
     hidden4: true, // language
     hidden: true, // location
     hidden3: true, // profile
-    hidden8: true // search
+    hidden8: true, // search
+    hidden9: true//potential
 };
 
 const allReducer = (state = INITIAL_STATE, action) => {
@@ -22,7 +23,8 @@ const allReducer = (state = INITIAL_STATE, action) => {
                 hidden3: true,
                 hidden4: true,
                 hidden7: true,
-                hidden8: true
+                hidden8: true,
+                hidden9: true
             }
         case AllActionTypes.TOGGLE_CALENDAR1_HIDDEN:
             return {
@@ -33,7 +35,8 @@ const allReducer = (state = INITIAL_STATE, action) => {
                 hidden3: true,
                 hidden4: true,
                 hidden6: true,
-                hidden8: true
+                hidden8: true,
+                hidden9: true
             }
         case AllActionTypes.TOGGLE_GUEST_HIDDEN:
             return {
@@ -44,7 +47,8 @@ const allReducer = (state = INITIAL_STATE, action) => {
                 hidden3: true,
                 hidden4: true,
                 hidden7: true,
-                hidden8: true
+                hidden8: true,
+                hidden9: true
             }
         case AllActionTypes.TOGGLE_LANGUAGE_HIDDEN:
             return {
@@ -77,7 +81,8 @@ const allReducer = (state = INITIAL_STATE, action) => {
                 hidden6: true,
                 hidden4: true,
                 hidden7: true,
-                hidden8: true
+                hidden8: true,
+                hidden9: true
             }
         case AllActionTypes.TOGGLE_FIELD_HIDDEN:
             return {
@@ -89,6 +94,19 @@ const allReducer = (state = INITIAL_STATE, action) => {
                 hidden6: true,
                 hidden4: true,
                 hidden7: true,
+                hidden9: true
+            }
+        case AllActionTypes.TOGGLE_LEARN_HIDDEN:
+            return {
+                ...state,
+                hidden9: !state.hidden9,
+                hidden: true,
+                hidden2: true,
+                hidden3: true,
+                hidden4: true,
+                hidden6: true,
+                hidden7: true,
+                hidden8: true
             }
         default:
             return state;
