@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Hedaer3 from '../../component/Ahost/ahost-header/ahost-header.component';
 import HostDrop from '../../component/Ahost/ahost-drop/ahost-drop.component';
 import HostCarousel from "../../component/Ahost/ahost-carousel/ahost-carousel.component";
@@ -10,6 +10,8 @@ import Aircover from "../../component/Ahost/aircover/aircover.component";
 import Ahostfooter from "../../component/Ahost/ahost-footer/ahost-footer.component";
 import { connect } from "react-redux";
 import './a-host.styles.scss';
+import Footer from "../../component/footer/footer.component";
+import AhostLower from "../../component/Ahost/ahost-lower/ahost-lower.component";
 
 const AhostPage = ({ hidden9 }) => {
     return (
@@ -22,7 +24,8 @@ const AhostPage = ({ hidden9 }) => {
             <Superhost />
             <Aircover />
             <Ahostfooter />
-
+            <Footer />
+            <AhostLower />
             {
                 hidden9 ? null : <Potential />
             }

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 import './potential.styles.scss';
 
-const Potential = () => {
+const Potential = ({ setOpenModal }) => {
     return(
         <div className="main-potential">
+            <button className="close" onClick={() => 
+                {
+                    setOpenModal(false)
+            }}> X </button>
             <div className="title-potential">
                 How we estimate your earning Potential
             </div>
