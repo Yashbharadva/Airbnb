@@ -6,6 +6,8 @@ import { BsChevronDown } from 'react-icons/bs';
 
 import ReactPlayer from 'react-player';
 
+import { Link } from "react-scroll";
+
 import "./ahost-header.styles.scss";
 
 const HeaderAhost = () => {
@@ -53,9 +55,9 @@ const HeaderAhost = () => {
                 
                 </ReactPlayer>
             </div>
-            <div className="arrowahost">
+            <Link to="drop" spy={true} smooth={true} className="arrowahost">
             <BsChevronDown color="white"/>
-            </div>
+            </Link>
         </div>
         </div>
   

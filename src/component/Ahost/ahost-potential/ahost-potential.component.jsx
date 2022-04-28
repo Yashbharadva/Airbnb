@@ -1,28 +1,26 @@
 import React, { useState } from "react";
+import "./ahost-potential.styles.scss";
+import Modal from "../potential/potential.component";
 import { connect } from "react-redux";
-import { toggleLearnHidden } from "../../../Redux/All/all.actions";
-import Potential from "../potential/potential.component";
-import './ahost-potential.styles.scss';
 
-const AhostPotential = ({ toggleLearnHidden }) => {
-    const [modalOpen, setModalOpen] = useState(false)
-    return (
-        <div className="ahost-potential" >
-            <div className="potential">
-                <div className="estimate" onClick={toggleLearnHidden} >
-                    How we estimate your earnings potential
-                </div>
-                {
-                    modalOpen && <Potential className="pp" setModalOpen={setModalOpen} />
-                }
-            </div>
-        </div>
-    )
+function App() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  return (
+    <div className="App">
+        <div className="all-open">
+        <div className="titleopen" onClick={() => {
+          setModalOpen(true);
+        }}>
+      How we estimate your earnings potential
+      </div>
+      </div>
+
+      {modalOpen && <Modal setOpenModal={setModalOpen} />}
+    </div>
+  );
 }
 
-const mapDispatchToProps = dispatch => ({
-    toggleLearnHidden: () => dispatch(toggleLearnHidden()),
-})
 
 
-export default connect(null, mapDispatchToProps)(AhostPotential);
+export default App;
