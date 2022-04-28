@@ -6,7 +6,7 @@ import { DateRangePicker } from "react-date-range";
 import { addDays, subDays } from "date-fns";
 import './DateRangeFilter.styles.scss';
 import Carousel from 'react-elastic-carousel';
-import DATE_DATA from "../../datedata";
+import DATE_DATA from "../../../datedata";
 import DateScroll from "../Date-scroll/date-scroll.component";
 
 const DateRangeFilter = ({ onChange }) => {

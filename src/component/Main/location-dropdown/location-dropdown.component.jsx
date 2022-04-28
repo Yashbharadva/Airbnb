@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import './location-dropdown.styles.scss';
 
-import LOCATION_DATA from "../../locationdata";
+import LOCATION_DATA from "../../../locationdata";
 
 import Locate from "../location/location.component";
 

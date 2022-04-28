@@ -1,25 +1,19 @@
-.location-dropdown{ 
+.search-field{
     margin-left: 29rem;
-    margin-top: -280rem;
-    z-index:2;
-    position:absolute;
-    cursor: pointer;
-    
+    margin-top: -277rem;
+    position: absolute;
+}
 
-.box1{
+
+
+.field{
     background-color: #ffffff;
-    height: 51rem;
+    height: 10rem;
     width: 21rem;
     margin-left: -30px;
     margin-right: 80px;
     border-radius: 15px;
     border: 1px solid black;
-
-    .near{
-        margin-left: 2rem;
-        margin-top: 2rem;
-    }
-    
 
     .location-button{
         border: 1px solid black;
@@ -43,15 +37,10 @@
             margin-left: 15rem;
             margin-top: -1.1rem;
             background: linear-gradient(to right, #ffffff, #ffffff);
-            // background: linear-gradient(90deg, #6F019C, #C6017E);
-            // -webkit-text-fill-color: transparent;
-            // -webkit-background-clip: text;
         }
-
     }
     .anywhere{
         margin-left: 2rem;
         margin-top: 1rem;
     }
-}
 }

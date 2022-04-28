@@ -11,7 +11,7 @@ import Ahostfooter from "../../component/Ahost/ahost-footer/ahost-footer.compone
 import { connect } from "react-redux";
 import AhostHeader2 from "../../component/Ahost/ahost-header2/ahost-header2.component";
 import './a-host.styles.scss';
-import Footer from "../../component/footer/footer.component";
+import Footer from "../../component/Main/footer/footer.component";
 import AhostLower from "../../component/Ahost/ahost-lower/ahost-lower.component";
 
 const AhostPage = ({ hidden9 }) => {

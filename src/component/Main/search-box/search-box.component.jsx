@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { toggleFieldHidden, toggleLocationHidden } from '../../Redux/All/all.actions';
-import { toggleGuestHidden } from '../../Redux/All/all.actions';
-import { toggleCalendarHidden } from '../../Redux/All/all.actions';
-import { toggleCalendar1Hidden } from '../../Redux/All/all.actions';
+import { toggleFieldHidden, toggleLocationHidden } from '../../../Redux/All/all.actions';
+import { toggleGuestHidden } from '../../../Redux/All/all.actions';
+import { toggleCalendarHidden } from '../../../Redux/All/all.actions';
+import { toggleCalendar1Hidden } from '../../../Redux/All/all.actions';
 import { BsSearch } from 'react-icons/bs';
 import 'react-calendar/dist/Calendar.css';
 import 'react-date-range/dist/styles.css';

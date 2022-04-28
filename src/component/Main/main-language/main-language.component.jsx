@@ -2,11 +2,11 @@ import React from "react";
 
 import './main-language.styles.scss';
 
-import Language from "../../component/launguage/language.component";
+import Language from '../../Main/launguage/language.component';
 import { useState } from "react";
-import LANGUAGE_DATA from "../../languagedata";
-import LANGUAGE_DATAA from "../../languagedata2";
-import CURRENCT_DATA from "../../currencydata";
+import LANGUAGE_DATA from "../../../languagedata";
+import LANGUAGE_DATAA from "../../../languagedata2";
+import CURRENCT_DATA from "../../../currencydata";
 import { BsTranslate } from "react-icons/bs";
 import { IoIosSwitch } from 'react-icons/io';
 
@@ -37,7 +37,7 @@ const MainLanguage = ({ setOpenModal }) => {
                     <div className="translation">Translation <BsTranslate /></div>
                     <span className="span">Automatically translate descrptions and review to English</span>
                     <div className="switch">
-                        <a href="/help/home?from=footer">
+                        <a href="/">
                             <IoIosSwitch size="2em" /></a></div>
                 </div>
 

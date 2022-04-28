@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import { Link } from "react-router-dom";
+
 import { SiAirbnb } from 'react-icons/si';
 
 import { IoIosGlobe } from 'react-icons/io';
@@ -8,13 +10,13 @@ import { IoReorderThreeOutline } from 'react-icons/io5';
 
 import { CgProfile } from 'react-icons/cg';
 
-import { toggleProfileHidden } from '../../Redux/All/all.actions';
+import { toggleProfileHidden } from '../../../Redux/All/all.actions';
 
-import { toggleLanguageHidden } from '../../Redux/All/all.actions';
+import { toggleLanguageHidden } from '../../../Redux/All/all.actions';
 
 import { connect } from 'react-redux';
 
-import MainLanguage from "../main-language/main-language.component";
+import MainLanguage from "../../Main/main-language/main-language.component";
 
 
 import "./header.styles.scss";
@@ -38,7 +40,7 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
     return (
         <header className={header}>
             <div className="logo">
-                <a href="/help/home?from=footer">
+                <a href="/">
                     <SiAirbnb size="1.3em" />airbnb
                 </a></div>
 
@@ -48,16 +50,16 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
                 <div className="link-item">Online Experiences</div>
             </ul>
             <div className="hosts">
-                <div className="host" to="/become a host">
+                <Link className="host" to="/Ahost">
                     Become a Host
-                </div>
-
+                </Link>
                 <div className="language" onClick={toggleLanguageHidden}>
-                    <IoIosGlobe size="1.5em" color="grey" />
-                    {
+                    <IoIosGlobe
+                      size="1.5em" color="grey" />
+                </div>
+                {
                         modalOpen && <MainLanguage setOpenModal={setModalOpen} />
                     }
-                </div>
                 <div className="profile-line" onClick={toggleProfileHidden}>
                     <div className="three-line">
                         <IoReorderThreeOutline size="1.5em" color="grey" />
