@@ -1,0 +1,68 @@
+.headerahost2{
+    margin-top: -110px;
+    position: absolute;
+    background-color: black;
+    width: 1904px;
+    height: 109.5px;
+
+}
+
+
+.logoforahost {
+    margin-left: 80px;
+    padding-top: 60px;
+    display: flex;
+    
+
+.tryhosting{
+    color: orange;
+    margin-left: 1520px;
+    border: 1px solid aqua;
+    padding: 10px 30px ;
+    margin-top: -5px;
+}}
+
+ 
+
+// .header3 {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: 00%;
+//     height: 0px;
+//     background-color: gray;
+//     color: black;
+//     transform: translateY(10);
+//     transition: transform 6s ease;
+//     animation: myanimation 3s;
+//     z-index: 2;
+//   }
+
+
+@keyframes myanimation {
+    0% {
+      background-color: white;
+      color: black;
+    }
+    35% {
+      background-color: white;
+      color: black;
+    }
+    100% {
+      background-color: white;
+      color: black;
+    }
+  }
+
+.header3{
+    position: fixed;
+    transform: translateY(20);
+    width: 100%;
+    height: 220px;
+    
+}
+
+

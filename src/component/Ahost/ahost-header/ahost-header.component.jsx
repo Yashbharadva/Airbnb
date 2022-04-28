@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import { SiAirbnb } from 'react-icons/si';
 
 import { BsChevronDown } from 'react-icons/bs';
 
@@ -11,30 +10,9 @@ import { Link } from "react-scroll";
 import "./ahost-header.styles.scss";
 
 const HeaderAhost = () => {
-    
-    const [header, setHeader] = useState("header");
-    const [modalOpen, setModalOpen] = useState(false)
-    const listenScrollEvent = event => {
-        if (window.scrollY < 73) {
-            return setHeader("header");
-        } else if (window.scrollY > 70) {
-            return setHeader("headerahost");
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener("scroll", listenScrollEvent);
-        return () => window.removeEventListener("scroll", listenScrollEvent);
-    }, []);
-
     return(
         <div className="main-ahost">
         <div className="headerahost">
-            <div className="logoforahost">
-                <a href="/" >
-                    <SiAirbnb size='2em' color='white'/>
-                </a>
-            </div>
             <div className="titleahost">
                 Hosting <br />
                 makes Airbnb, <br />
@@ -60,7 +38,6 @@ const HeaderAhost = () => {
             </Link>
         </div>
         </div>
-  
     )
 }
 
