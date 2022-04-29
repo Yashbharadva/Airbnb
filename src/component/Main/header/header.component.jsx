@@ -47,7 +47,7 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
             <ul className="links">
                 <div className="link-item">Place to Stay</div>
                 <div className="link-item">Experiences</div>
-                <div className="link-item">Online Experiences</div>
+                <Link className="link-item" to="/online-experience">Online Experiences</Link>
             </ul>
             <div className="hosts">
                 <Link className="host" to="/Ahost">

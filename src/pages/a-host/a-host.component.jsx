@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Hedaer3 from '../../component/Ahost/ahost-header/ahost-header.component';
 import HostDrop from '../../component/Ahost/ahost-drop/ahost-drop.component';
 import HostCarousel from "../../component/Ahost/ahost-carousel/ahost-carousel.component";

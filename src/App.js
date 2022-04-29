@@ -6,6 +6,7 @@ import {
 
 import HomePage from './pages/homepage/homepage.component';
 import AhostPage from './pages/a-host/a-host.component';
+import OnlineExe from './pages/online-exe/online-exe.component';
 import './App.css';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route path='/Ahost' component={AhostPage} />
+        <Route path='/online-experience' component={OnlineExe} />
       </Switch>
     </>
   )
