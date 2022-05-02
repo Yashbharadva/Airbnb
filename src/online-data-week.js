@@ -5,67 +5,67 @@ const ONLINE_DATA_WEEK = [
     },
     {
         id: 2,
-        title:'Great for groups'
+        title:'Family-friendly'
     },
     {
         id: 3,
-        title:'Great for groups'
+        title:'Animals'
     },
     {
         id: 4,
-        title:'Great for groups'
+        title:'Arts & writing'
     },
     {
         id: 5,
-        title:'Great for groups'
+        title:'Banking'
     },
     {
         id: 6,
-        title:'Great for groups'
+        title:'Cooking'
     },
     {
         id: 7,
-        title:'Great for groups'
+        title:'Dance'
     },
     {
         id: 8,
-        title:'Great for groups'
+        title:'Drinks'
     },
     {
         id: 9,
-        title:'Great for groups'
+        title:'Entertainment'
     },
     {
         id: 10,
-        title:'Great for groups'
+        title:'Fitness'
     },
     {
         id: 11,
-        title:'Great for groups'
+        title:'History & culture'
     },
     {
         id: 12,
-        title:'Great for groups'
+        title:'Magic'
     },
     {
         id: 13,
-        title:'Great for groups'
+        title:'Music'
     },
     {
         id: 14,
-        title:'Great for groups'
+        title:'Social impact'
     },
     {
         id: 15,
-        title:'Great for groups'
+        title:'Wellness'
     },
     {
         id: 16,
-        title:'Great for groups'
+        title:'Olympians & Paralympians'
     },
     {
         id: 17,
-        title:'Great for groups'
+        title:'Designed for accessibility'
     },
 ];
 
