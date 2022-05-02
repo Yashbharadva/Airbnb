@@ -9,7 +9,7 @@ import OnlineWeekFetch from "../online-week-fetch/online-week-fetch.component";
 const OnlineFilter = () => {
     const [items] = useState(ONLINE_DATA_WEEK);
     const breakPoints = [{
-        width: 1, itemsToShow: 5
+        width: 1, itemsToShow: 3
       }];
     return(
         <div className='dates-filters'>
