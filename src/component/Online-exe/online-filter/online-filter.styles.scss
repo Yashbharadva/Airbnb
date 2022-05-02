@@ -1,0 +1,53 @@
+.dates-filters{
+    display: flex;
+    margin-left: 6.5rem;
+    cursor: pointer;
+
+    hr{
+        margin-left: 1.5rem;
+        
+    }
+    
+
+    .filter-date{
+        border: 1px solid rgb(200, 199, 199);
+        padding: 15px 20px;
+        border-radius: 25px;
+
+        &:hover{
+            border: 1px solid black;
+        }
+    }
+
+    .more-filter{
+        margin-left: 1rem;
+        border: 1px solid rgb(200, 199, 199);
+        padding: 15px 20px;
+        border-radius: 25px;
+
+        &:hover{
+            border: 1px solid black;
+        }
+    }
+
+    .filter-groupsize{
+        margin-left: 1rem;
+        border: 1px solid rgb(200, 199, 199);
+        padding: 15px 20px;
+        border-radius: 25px;
+
+        &:hover{
+            border: 1px solid black;
+        }
+    }
+
+    .online-week{
+        display: flex;
+
+        .spd{
+            width: 75rem;
+            margin-right: 10rem;
+           
+        }
+    }
+}

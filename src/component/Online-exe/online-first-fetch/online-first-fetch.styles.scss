@@ -1,32 +1,52 @@
-.first-scroll{
+.first-scroll-image {
 
-color: aqua;
+    img {
 
-.first-scroll-image{
-
-    img{
-     
-    width: 531px;
-    height: 332px;
-    margin-top:5rem;
-    border-radius: 10px
-}
-}
-
-.firstsubtitleforscroll{
-    color: black;
-    
-    .firstplaceforscroll{
+        width: 531px;
+        height: 332px;
+        margin-top: 5rem;
+        border-radius: 10px;
         
-        width: 65px;
+    }
+}
+    
+
+    .firstsubtitleforscroll {
+        color: white;
+        position: absolute;
+        margin-top: -20rem;
+        margin-left: 1.5rem;
+        font-size: 12px;
+        font-weight: 300;
+
+    }
+    .firsttitleforscroll {
+        margin-top: 0rem;
+        background: transparent;
+        color: white;
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 600;
+        width: 234px;
+    
+    
+    .firstbuttonforscroll {
+
+        width: 60 px;
         padding: 8px 8px;
         border-radius: 7px;
         font-weight: 600;
         font-size: 15px;
         background-color: white;
-        margin-top: -6rem;
-        margin-left: 1.5rem;
+        color: black;
+        margin-top: 10rem;
         position: absolute;
     }
-}
-}
+    }
+    
+
+
+
+
+
+

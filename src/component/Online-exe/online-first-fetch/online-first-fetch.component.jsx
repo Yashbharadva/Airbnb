@@ -8,17 +8,21 @@ const OnlineFirstFetch = ({ item }) => {
         <div className="first-scroll">
             <div className="first-scroll-image">
                 <img src={`${imageUrl}`} alt="scroll" />
-            </div>
-            <div className="firstsubtitleforscroll">
-                {subtitle}
-                <div className="firsttitleforscroll">
-                    {title}
-                    <div className="firstplaceforscroll">
-                        {button}
+
+                <div className="firstsubtitleforscroll">
+                    {subtitle}
+
+                    <div className="firsttitleforscroll">
+                        {title}
+
+                        <div className="firstbuttonforscroll">
+                            {button}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
     )
 }

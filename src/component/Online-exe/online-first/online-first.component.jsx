@@ -5,10 +5,12 @@ import "slick-carousel/slick/slick-theme.css";
 import ONLINE_FIRST_DATA from "../../../online-first-data";
 import OnlineFirstFetch from "../online-first-fetch/online-first-fetch.component";
 import './online-first.styles.scss';
+import './carousel.styles.css';
 
 const OnlineFirst = () => {
     const [items] = useState(ONLINE_FIRST_DATA);
     const breakPoints = [{
+        dots: false,
         width: 1, itemsToShow: 3
     }];
     return (
@@ -21,6 +23,7 @@ const OnlineFirst = () => {
                     {
                         items.map((item) => (<OnlineFirstFetch key={item.id} item={item} />))
                     }
+                    
                 </Carousel>
             </div>
         </div>
