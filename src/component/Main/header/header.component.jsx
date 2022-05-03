@@ -22,13 +22,13 @@ import MainLanguage from "../../Main/main-language/main-language.component";
 import "./header.styles.scss";
 
 const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }) => {
-    const [header, setHeader] = useState("header");
+    const [header1, setHeader1] = useState("header");
     const [modalOpen, setModalOpen] = useState(false)
     const listenScrollEvent = event => {
         if (window.scrollY < 73) {
-            return setHeader("header");
+            return setHeader1("header1");
         } else if (window.scrollY > 70) {
-            return setHeader("header2");
+            return setHeader1("header2");
         }
     };
 
@@ -38,7 +38,7 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
     }, []);
 
     return (
-        <header className={header}>
+        <header className={header1}>
             <div className="logo">
                 <a href="/">
                     <SiAirbnb size="1.3em" />airbnb

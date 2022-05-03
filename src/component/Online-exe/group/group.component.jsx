@@ -5,9 +5,9 @@ import Carousel from 'react-elastic-carousel';
 import TRIP_DATA from "../../../trip-data";
 import TripFetch from "../trip-fetch/trip-fetch.component";
 
-import './new-trip.styles.scss';
+import './group.styles.scss';
 
-const NewTrip = () => {
+const GroupGreat = () => {
     const [items] = useState(TRIP_DATA);
     const breakPoints = [{
         width: 1, itemsToShow: 6 , itemsToScroll:6
@@ -15,10 +15,7 @@ const NewTrip = () => {
     return(
         <div className="new-trip">
             <div className="text-new-trip">    
-            <h2>Plan a trip with help from local Hosts around the world</h2>
-            </div>
-            <div className="show-all-trip">
-                Show(13)
+            <h2>Great for groups</h2>
             </div>
             <div className="trip-fetch-new">
         <div className="trip-host">
@@ -33,4 +30,4 @@ const NewTrip = () => {
     )
 }
 
-export default NewTrip;
+export default GroupGreat;

@@ -5,9 +5,9 @@ import Carousel from 'react-elastic-carousel';
 import TRIP_DATA from "../../../trip-data";
 import TripFetch from "../trip-fetch/trip-fetch.component";
 
-import './new-trip.styles.scss';
+import './weekend.styles.scss';
 
-const NewTrip = () => {
+const Weekend = () => {
     const [items] = useState(TRIP_DATA);
     const breakPoints = [{
         width: 1, itemsToShow: 6 , itemsToScroll:6
@@ -15,10 +15,10 @@ const NewTrip = () => {
     return(
         <div className="new-trip">
             <div className="text-new-trip">    
-            <h2>Plan a trip with help from local Hosts around the world</h2>
+            <h2>Make plans this weekend</h2>
             </div>
-            <div className="show-all-trip">
-                Show(13)
+            <div className="weekend-trip">
+                Show(665)
             </div>
             <div className="trip-fetch-new">
         <div className="trip-host">
@@ -33,4 +33,4 @@ const NewTrip = () => {
     )
 }
 
-export default NewTrip;
+export default Weekend;

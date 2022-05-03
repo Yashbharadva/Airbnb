@@ -1,0 +1,34 @@
+.trip-fetch{
+    object-fit: cover;
+    cursor: pointer;
+
+.video-fetch{
+    video{
+        object-fit: cover;
+        width: 241px;
+        height: 322px;
+        border-radius: 10px;
+    }
+}
+
+.image-sub-title{
+    margin-top: 1rem;
+}
+
+.title-text{
+    margin-left: 1.2rem;
+    margin-top: -1.1rem;
+    font-weight: 350;
+}
+
+.title-trip{
+    width: 241px;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+.price-trip{
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+}
