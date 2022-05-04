@@ -1,16 +1,13 @@
 import React from "react";
 
-import './trip-fetch.styles.scss';
+import './hour-fetch.styles.scss';
+import HoverVideoPlayer from "react-hover-video-player/dist/component/HoverVideoPlayer";
 
-import { AiFillStar } from 'react-icons/ai';
 
-import HoverVideoPlayer from 'react-hover-video-player';
-
-const TripFetch = ({ item }) => {
-    const { videourl, imageUrl, subtitle, subtext, title, price } = item;
-    return (
-        <div className="trip-fetch">
-            <div className="video-fetch">
+const HourFetch = () => {
+    return(
+        <div className="hour-fetch">
+            <div className="video-hour-fetch">
                 <HoverVideoPlayer
                     videoSrc={`${videourl}`}
                     alt="mp4/video"
@@ -19,17 +16,17 @@ const TripFetch = ({ item }) => {
                     />}
                 ></HoverVideoPlayer>
             </div>
-            <div className="image-sub-title">
+            <div className="image-hour-title">
                 <AiFillStar color="red" />
             </div>
-            <div className="title-text">
+            <div className="title-hour-text">
                 {subtitle}
                 {subtext}
             </div>
-            <div className="title-trip">
+            <div className="title-hour-trip">
                 {title}
             </div>
-            <div className="price-trip">
+            <div className="price-hour-trip">
                 {price}
             </div>
         </div>
@@ -37,4 +34,4 @@ const TripFetch = ({ item }) => {
     )
 }
 
-export default TripFetch;
+export default HourFetch;
