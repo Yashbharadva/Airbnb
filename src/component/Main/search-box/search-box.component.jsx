@@ -17,7 +17,8 @@ const SearchBox = ({ toggleLocationHidden, toggleGuestHidden, toggleCalendarHidd
     }
     
     return (
-        <div className="searchmain">
+        <div className="searchmain"
+        id='drop'>
             <div className="searchbox">
                 <div className='location-main-search'>
                 <div className="location" onClick={toggleLocationHidden}>

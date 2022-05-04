@@ -8,6 +8,8 @@ import { IoIosGlobe } from 'react-icons/io';
 
 import { IoReorderThreeOutline } from 'react-icons/io5';
 
+import { AiOutlineSearch } from 'react-icons/ai';
+
 import { CgProfile } from 'react-icons/cg';
 
 import { toggleProfileHidden } from '../../../Redux/All/all.actions';
@@ -48,6 +50,15 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
                 <div className="link-item">Place to Stay</div>
                 <div className="link-item">Experiences</div>
                 <Link className="link-item" to="/online-experience">Online Experiences</Link>
+                <Link className="input-search">
+                <input className="search-animation"
+                type="search"
+                placeholder="Start your search" 
+                ></input>
+                <div className="search-logo-ani">
+                <AiOutlineSearch/>
+                </div>
+                </Link>
             </ul>
             <div className="hosts">
                 <Link className="host" to="/Ahost">

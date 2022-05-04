@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Carousel from 'react-elastic-carousel';
-import TRIP_DATA from "../../../trip-data";
+import WEEKEND_DATA from "../../../weekend-data";
 import TripFetch from "../trip-fetch/trip-fetch.component";
 
 import './weekend.styles.scss';
 
 const Weekend = () => {
-    const [items] = useState(TRIP_DATA);
+    const [items] = useState(WEEKEND_DATA);
     const breakPoints = [{
         width: 1, itemsToShow: 6 , itemsToScroll:6
       }];
