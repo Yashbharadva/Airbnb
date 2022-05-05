@@ -1,19 +1,18 @@
 import React,{ useState } from "react";
 
-import TripFetch from "../trip-fetch/trip-fetch.component";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Carousel from 'react-elastic-carousel';
-import ONLINE_DATA_WEEK from "../../../online-data-week";
 
 import './next-hour.styles.scss';
+import HourFetch from "../hour-fetch/hour-fetch.component";
+import WEEKEND_DATA from "../../../weekend-data";
 
 
 const NextHour = () => {
-    const [items] = useState(ONLINE_DATA_WEEK);
+    const [items] = useState(WEEKEND_DATA);
     const breakPoints = [{
-        width: 1, itemsToShow: 5
+        width: 1, itemsToShow: 3, itemsToScroll:3
       }];
     return(
         <div className="next-hour">
@@ -24,7 +23,7 @@ const NextHour = () => {
         <div className="trip-hour-host">
                 <Carousel breakPoints={breakPoints}>
                     {
-                        items.map((item) => (<TripFetch key={item.id} item={item} />))
+                        items.map((item) => (<HourFetch key={item.id} item={item} />))
                     }
                 </Carousel>
             </div>

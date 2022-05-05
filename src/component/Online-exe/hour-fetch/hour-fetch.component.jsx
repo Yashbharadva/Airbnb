@@ -1,10 +1,10 @@
 import React from "react";
-
+import { AiFillStar } from 'react-icons/ai';
 import './hour-fetch.styles.scss';
-import HoverVideoPlayer from "react-hover-video-player/dist/component/HoverVideoPlayer";
+import HoverVideoPlayer from "react-hover-video-player";
 
 
-const HourFetch = () => {
+const HourFetch = ({ videourl, imageUrl, subtitle, subtext, title, price }) => {
     return(
         <div className="hour-fetch">
             <div className="video-hour-fetch">
@@ -19,7 +19,7 @@ const HourFetch = () => {
             <div className="image-hour-title">
                 <AiFillStar color="red" />
             </div>
-            <div className="title-hour-text">
+            <div className="hour-text">
                 {subtitle}
                 {subtext}
             </div>
