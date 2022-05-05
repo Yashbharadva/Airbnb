@@ -1,33 +1,45 @@
-import React,{ useState } from "react";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Carousel from 'react-elastic-carousel';
-
+import React, { useState } from "react";
+import HoverVideoPlayer from "react-hover-video-player";
 import './next-hour.styles.scss';
-import HourFetch from "../hour-fetch/hour-fetch.component";
-import WEEKEND_DATA from "../../../weekend-data";
+import { AiFillStar } from "react-icons/ai";
+import { FiHeart } from 'react-icons/fi';
 
 
-const NextHour = () => {
-    const [items] = useState(WEEKEND_DATA);
-    const breakPoints = [{
-        width: 1, itemsToShow: 3, itemsToScroll:3
-      }];
-    return(
+const NextHour = ({ item }) => {
+    const { videourl, imageUrl, subtitle, subtext, title, price } = item;
+    return (
         <div className="next-hour">
-            <div className="title-for-hour">
-                Starting in the next 6 hours
+            <div className="all-in-one">
+                <div className="video-image-hour">
+                    <HoverVideoPlayer
+                        videoSrc={`${videourl}`}
+                        pausedOverlay={
+                            <img src={`${imageUrl}`} />
+                        } />
                 </div>
-                <div className="trip-fetch-hour">
-        <div className="trip-hour-host">
-                <Carousel breakPoints={breakPoints}>
-                    {
-                        items.map((item) => (<HourFetch key={item.id} item={item} />))
-                    }
-                </Carousel>
+                <div className="all-sub-text">
+                    <div className="image-star">
+                        <AiFillStar
+                            color="red"
+                            width="10px"
+                            height="10px"
+                        />
+                    </div>
+                    <div className="hour-text">
+                        {subtitle}
+                        {subtext}
+                    </div>
+                    <div className="heart-hour">
+                        <FiHeart />
+                    </div>
+                    <div className="title-hour-trip">
+                        {title}
+                    </div>
+                    <div className="price-hour-trip">
+                        {price}
+                    </div>
+                </div>
             </div>
-        </div>
         </div>
     )
 }

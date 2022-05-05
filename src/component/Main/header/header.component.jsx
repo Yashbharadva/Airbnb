@@ -46,10 +46,11 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
                     <SiAirbnb size="1.3em" />airbnb
                 </a></div>
 
-            <ul className="links">
-                <div className="link-item">Place to Stay</div>
-                <div className="link-item">Experiences</div>
-                <Link className="link-item" to="/online-experience">Online Experiences</Link>
+            <div className="links">
+                <Link className="link-item">Place to Stay</Link>
+                <Link className="link-item">Experiences</Link>
+                <Link className="link-item" to="/online-experience">
+                    Online Experiences</Link>
                 <Link className="input-search">
                 <input className="search-animation"
                 type="search"
@@ -59,7 +60,7 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
                 <AiOutlineSearch/>
                 </div>
                 </Link>
-            </ul>
+            </div>
             <div className="hosts">
                 <Link className="host" to="/Ahost">
                     Become a Host
