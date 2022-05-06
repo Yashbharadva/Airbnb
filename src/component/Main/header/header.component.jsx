@@ -41,6 +41,7 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
 
     return (
         <header className={header1}>
+            
             <div className="logo">
                 <a href="/">
                     <SiAirbnb size="1.3em" />airbnb
@@ -85,7 +86,6 @@ const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }
                 {
                     hidden3 ? null :
                         (<div className="box5">
-
                             <div className="profile">
                                 <div className="profile1"><h4>Sign Up</h4></div>
                                 <div className="profile2"><h4>Log in</h4></div> <hr />

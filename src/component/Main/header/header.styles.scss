@@ -12,15 +12,20 @@
     transform: translateY(3);
     transition: transform 6s ease;
 
+    
+
     .logo {
         margin-left: 6rem;
         color: white;
         cursor: pointer;
 
+
         a {
             color: white;
             text-decoration: none;
         }
+
+       
     }
 
     .links {
@@ -39,6 +44,8 @@
             margin: 0rem -10rem;
             margin-left: 5rem;
             text-decoration: none;
+
+            
         }
 
        
@@ -51,6 +58,8 @@
             background-color: black;
             border: none;
             outline: none;
+
+            
         }
 
         ::placeholder{
@@ -64,20 +73,28 @@
         color: white;
         cursor: pointer;
 
+        
+
         .profile-item1 {
             width: auto;
             margin: 0rem 15rem;
             margin-left: -12rem;
+
+           
         }
         .profile-item2 {
             width: auto;
             margin: 0rem 15rem;
             margin-left: -13rem;
+
+            
         }
         .profile-item3 {
             width: auto;
             margin: 0rem 10rem;
             margin-left: -13rem;
+
+           
         }
     }
     .box3 {
@@ -86,6 +103,8 @@
         margin-top: 1rem;
         margin-left: -12rem;
         cursor: pointer;
+
+        
     }
     .box5 {
 
@@ -98,13 +117,19 @@
         border-radius: 20px;
         cursor: pointer;
 
+       
+
         .profile {
             font-size: 14px;
             padding: 0px 10px;
 
+           
+
             .profile1 {
                 padding: 0.5px 5px;
                 margin-top: 0.5rem;
+
+               
 
                 &:hover {
                     background-color: rgb(226, 217, 217);
@@ -115,6 +140,8 @@
             .profile2 {
                 color: gray;
                 padding: 1px 5px;
+
+              
 
                 &:hover {
                     background-color: rgb(226, 217, 217);
@@ -127,6 +154,8 @@
                 width: auto;
                 padding: 0.5px 5px;
 
+               
+
                 &:hover {
                     background-color: rgb(226, 217, 217);
                     border-radius: 10px;
@@ -138,6 +167,8 @@
                 width: auto;
                 padding: 0.5px 5px;
 
+             
+
                 &:hover {
                     background-color: rgb(226, 217, 217);
                     border-radius: 10px;
@@ -148,6 +179,8 @@
                 color: gray;
                 width: auto;
                 padding: 0.5px 5px;
+
+             
 
                 &:hover {
                     background-color: rgb(226, 217, 217);
@@ -164,12 +197,16 @@
         justify-content: right;
         margin-left: -35rem;
         text-decoration: none;
+        margin-top: 0.7rem;
+      
 
         .language {
             width: auto;
             height: 25px;
             padding: 15px;
             cursor: pointer;
+
+          
         }
 
         .profile-line {
@@ -178,6 +215,8 @@
             background-color: white;
             cursor: pointer;
 
+          
+
             .profile {
                 width: auto;
                 margin-top: -2.6rem;
@@ -185,6 +224,8 @@
                 height: 25px;
                 padding: 10px;
                 cursor: pointer;
+
+              
             }
 
             .three-line {
@@ -193,6 +234,8 @@
                 padding: 5px;
                 margin-top: 0.2rem;
                 cursor: pointer;
+
+             
             }
         }
         .host {
@@ -202,6 +245,8 @@
             padding: 10px;
             border-radius: 10px;
             color: white;
+
+           
             
 
             &:hover {
@@ -214,25 +259,28 @@
     }
 }
 .header2 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 130px;
-    background-color: white;
-    color: black;
-    transform: translateY(10);
-    transition: transform 6s ease;
-    animation: myanimation 3s;
-    z-index: 2;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    // width: 80%;
+    // height: 130px;
+    // background-color: white;
+    // color: black;
+    // transform: translateY(10);
+    // transition: transform 6s ease;
+    // animation: myanimation 3s;
+    // z-index: 2;
+
+   
 
    // after animation of search bar 
    //have to apply the animation on search bar
    .input-search{ 
-       margin-left: 5rem;
+       margin-left: 2rem;
+       
    
    input{
         background-color: white;
@@ -244,6 +292,8 @@
         border: 1px solid gray;
         outline: none;
         cursor: pointer;
+
+      
     }
 
     .search-logo-ani{
@@ -258,6 +308,8 @@
         size: 1em;
         font-size: 20px;
         font-weight: 800;
+
+       
         
     }
 }
@@ -299,6 +351,8 @@
         color: red;
         text-decoration: none;
     }
+
+   
 }
 
 .links {
@@ -308,12 +362,16 @@
     width: auto;
     cursor: pointer;
 
+    
+
     .link-item {
         width: 20rem;
         cursor: pointer;
         color: white;
         margin: 0rem -10rem;
         margin-left: 5rem;
+
+       
     }
 }
 
@@ -325,6 +383,8 @@
     justify-content: right;
     margin-left: -22rem;
     color: black;
+
+   
     
 
     .language {
@@ -332,12 +392,16 @@
         height: 25px;
         padding: 15px;
         cursor: pointer;
+
+       
     }
 
     .profile-line {
         border: 1px solid white;
         border-radius: 99px;
         background-color: white;
+
+      
 
         .profile {
             width: auto;
@@ -346,6 +410,8 @@
             height: 25px;
             padding: 10px;
             cursor: pointer;
+
+            
         }
 
         .three-line {
@@ -354,6 +420,8 @@
             padding: 5px;
             margin-top: 0.2rem;
             cursor: pointer;
+
+           
         }
     }
     .host {
@@ -364,6 +432,7 @@
         border-radius: 10px;
         color: black;
         text-decoration: none;
+
 
         &:hover {
             cursor: pointer;
@@ -383,6 +452,8 @@
     margin-top: 1rem;
     margin-left: -12rem;
     cursor: pointer;
+
+   
 }
 
 .box5 {
@@ -396,13 +467,19 @@
     border-radius: 20px;
     cursor: pointer;
 
+    
+
     .profile {
         font-size: 14px;
         padding: 0px 10px;
 
+       
+
         .profile1 {
             padding: 0.5px 5px;
             margin-top: 0.5rem;
+
+            
 
             &:hover {
                 background-color: rgb(226, 217, 217);
@@ -413,6 +490,8 @@
         .profile2 {
             color: gray;
             padding: 1px 5px;
+
+           
 
             &:hover {
                 background-color: rgb(226, 217, 217);
@@ -425,6 +504,8 @@
             width: auto;
             padding: 0.5px 5px;
 
+          
+
             &:hover {
                 background-color: rgb(226, 217, 217);
                 border-radius: 10px;
@@ -435,6 +516,8 @@
             color: gray;
             width: auto;
             padding: 0.5px 5px;
+
+           
 
             &:hover {
                 background-color: rgb(226, 217, 217);
@@ -447,6 +530,8 @@
             width: auto;
             padding: 0.5px 5px;
 
+          
+
             &:hover {
                 background-color: rgb(226, 217, 217);
                 border-radius: 10px;
@@ -454,3 +539,5 @@
         }
     }
 }
+
+

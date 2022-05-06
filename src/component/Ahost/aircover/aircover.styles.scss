@@ -1,53 +1,55 @@
-.aircover{
-
+@media screen and (max-width: 2000px){
+    .aircover{
+    
+        .cover{
+           margin-top: 35rem;
+           background-color: #f7f7f7;
+           width: 105.938rem;
+           height: 47.25rem;
+           margin-left: 6.9rem;
+           border-radius: 1rem;
     
     
-    .cover{
-       margin-top: 35rem;
-       background-color: #f7f7f7;
-       width: 105.938rem;
-       height: 47.25rem;
-       margin-left: 6.9rem;
-       border-radius: 1rem;
-
-
-    img {
-        width: 35%;
-        height: 70%;
-        margin-left: 68.75rem;
-        margin-top: 6.25rem;
-    }
-    }
-
-    .cover2{
-        margin-top: -35rem;
-        
-        img{
-            width: 17%;
-            height: 17%;
-            margin-left: 12.5rem;
-            
-            
+        img {
+            width: 35%;
+            height: 70%;
+            margin-left: 68.75rem;
+            margin-top: 6.25rem;
         }
-
-        .ptext{
-            margin-left: 12.8rem;
-            margin-top: 3.5rem;
-            p{
-                font-size: 1.875rem;
+        }
+    
+        .cover2{
+            margin-top: -35rem;
+            
+            img{
+                width: 17%;
+                height: 17%;
+                margin-left: 12.5rem;
+                
+                
             }
-        }
-
-        .button{
-            font-size: 1rem;
-            font-weight: 600;
-            border: 1px solid black;
-            width: 5.625rem;
-            padding: 0.813rem 1.625rem 0.813rem 1.625rem;
-            margin-left: 12.8rem;
-            margin-top: 3.5rem;
-            background-color: white;
-            border-radius: 0.5rem;
+    
+            .ptext{
+                margin-left: 12.8rem;
+                margin-top: 3.5rem;
+                p{
+                    font-size: 1.875rem;
+                }
+            }
+    
+            .button{
+                font-size: 1rem;
+                font-weight: 600;
+                border: 1px solid black;
+                width: 5.625rem;
+                padding: 0.813rem 1.625rem 0.813rem 1.625rem;
+                margin-left: 12.8rem;
+                margin-top: 3.5rem;
+                background-color: white;
+                border-radius: 0.5rem;
+            }
         }
     }
 }
+
+
