@@ -4,6 +4,7 @@
     width: 100%;
     margin-top: 190px;
     
+    
 
 
     .titleahost {
@@ -28,14 +29,19 @@
         
     }
     .video{
-        margin-left: 64rem;
-        margin-top: -7rem;
+        margin-left: 1024px;
+        margin-top: -112px;
         object-fit: cover;
         object-position: center top;
+
+        video{
+            width: 1000px;
+            height: 1000px;
+        }
     }
 
     .arrowahost{
-        margin-left: 25rem;
+        margin-left: 400px;
         font-weight: 800;
         font-size: 20px;
         cursor: pointer;

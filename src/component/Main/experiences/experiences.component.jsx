@@ -3,6 +3,7 @@ import React from "react";
 import './experiences.styles.scss';
 
 import Exe from "../exe/exe.component";
+import { Link } from "react-router-dom";
 
 const Experiences = () => {
     return (
@@ -14,7 +15,7 @@ const Experiences = () => {
                     alt="" />
                 <div className="container">
                     <h1>Things to do on your trip</h1>
-                    <div className="button">
+                    <div className="button" to="experiences">
                         <h3>Experiences</h3>
                     </div>
                 </div>
@@ -25,9 +26,9 @@ const Experiences = () => {
                     <h1>Things to do<br />
                         from home 
                         </h1>
-                    <div className="buttonn">
+                    <Link className="buttonn" to="/online-experience">
                         <h3>Online Experiences</h3>
-                    </div>
+                    </Link>
                 </div>
 
 
