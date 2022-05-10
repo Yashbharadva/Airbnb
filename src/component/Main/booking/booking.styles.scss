@@ -4,19 +4,130 @@
     z-index: -3;
 
 .booking {
-    margin-left: 4rem;
+    margin-left: 5rem;
     padding: 5rem;
     
-
+    $image:1900px;
+    $data: 1700px;
     img {
-        width: 100.9rem;
+        width: 100rem;
         align-items: center;
         border-radius: 10px;
-        //z-index: ;
+
+        @media screen and (max-width: $image) and (min-width: $data){
+            margin-left: -105px;
+            margin-right: 45px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 108%;
+            height: 688px;
+        }   
     }
 
+    $image10:1700px;
+    $data10: 1500px;
+    img {
+        @media screen and (max-width: $image10) and (min-width: $data10){
+            margin-left: -105px;
+            margin-right: 45px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 110%;
+            height: 658px;
+        }   
+    }
+
+    $image11:1500px;
+    $data11: 1300px;
+    img {
+        @media screen and (max-width: $image11) and (min-width: $data11){
+            margin-left: -105px;
+            margin-right: 45px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 109%;
+            height: 648px;
+        }   
+    }
+
+    $image12:1300px;
+    $data12: 1100px;
+    img {
+        @media screen and (max-width: $image12) and (min-width: $data12){
+            margin-left: -105px;
+            margin-right: 45px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 115%;
+            height: 524px;
+        }   
+    }
+
+    $image13:1100px;
+    $data13: 900px;
+    img {
+        @media screen and (max-width: $image13) and (min-width: $data13){
+            margin-left: -105px;
+            margin-right: 45px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 120%;
+            height: 458px;
+        }   
+    }
+
+    $image14:900px;
+    $data14: 700px;
+    img {
+        @media screen and (max-width: $image14) and (min-width: $data14){
+            margin-left: -105px;
+            margin-right: 45px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 123%;
+            height: 388px;
+        }   
+    }
+
+    $image15:700px;
+    $data15: 600px;
+    img {
+        @media screen and (max-width: $image15) and (min-width: $data15){
+            margin-left: -120px;
+            margin-right: 45px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 140%;
+            height: 388px;
+        }   
+    }
+
+    $image16:600px;
+    img {
+        @media screen and (max-width: $image16){
+            margin-left: -120px;
+            margin-right: 45px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 145%;
+            height: 388px;
+        }   
+    }
+    $image17: 500px;
+    img {
+        @media screen and (max-width: $image17) {
+            margin-left: -120px;
+            margin-right: 45px;
+            padding-left: 0;
+            padding-right: 0;
+            width: 168%;
+            height: 388px;
+        }   
+    }
+
+
     .container {
-        // position: relative;
+
         font-size: 1.25rem;
         top: 80rem;
         right: 42rem;
@@ -24,9 +135,56 @@
         transform: translate(30%, -195%);
         align-items: center;
         z-index: -3;
-        // transition: 0.3s ease-in-out ;
         
-        
+
+        h1{
+            @media screen and (max-width: 1900px) and (min-width:1700px){
+                font-size: 40px;
+                margin-left: -55rem;
+                margin-top: 4rem;
+            }
+            @media screen and (max-width: 1700px) and (min-width:1500px){
+                font-size: 40px;
+                margin-left: -55rem;
+                margin-top: 4rem;
+            }
+            @media screen and (max-width: 1500px) and (min-width:1300px){
+                font-size: 40px;
+                margin-left: -50rem;
+                margin-top: 4rem;
+            }
+            @media screen and (max-width: 1300px) and (min-width:1100px){
+                font-size: 35px;
+                margin-left: -42rem;
+                margin-top: 4rem;
+            }
+            @media screen and (max-width: 1100px) and (min-width:900px){
+                font-size: 31px;
+                margin-left: -32rem;
+                margin-top: 4rem;
+            }
+            @media screen and (max-width: 900px) and (min-width:700px){
+                font-size: 27px;
+                margin-left: -28rem;
+                margin-top: 4rem;;
+            }
+            @media screen and (max-width: 700px) and (min-width:600px){
+                font-size: 20px;
+                margin-left: -12rem;
+                margin-top: 5rem;
+            }
+            @media screen and (max-width: 600px) {
+                font-size: 20px;
+                margin-left: -12rem;
+                margin-top: 5rem;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 20px;
+                margin-left: -12rem;
+                margin-top: 5rem;
+            }
+            margin-left: -1000px;
+        }
 
 
 
@@ -40,7 +198,43 @@
             background: linear-gradient(to right, #ffffff, #ffffff);
             font-size: small;
             margin-left: 0rem;
-            
+
+            @media screen and (max-width: 1900px) and (min-width:1700px){
+                margin-left: 10px;
+                margin-top: 30px;
+            }
+            @media screen and (max-width: 1700px) and (min-width:1500px){
+                margin-left: -20px;
+                margin-top: 30px;
+            }
+            @media screen and (max-width: 1500px) and (min-width:1300px){
+                margin-left: -70px;
+                margin-top: 30px;
+            }
+            @media screen and (max-width: 1300px) and (min-width:1100px){
+                margin-left: -135px;
+                margin-top: 30px;
+            }
+            @media screen and (max-width: 1100px) and (min-width:900px){
+                margin-left: -165px;
+                margin-top: 30px;
+            }
+            @media screen and (max-width: 900px) and (min-width:700px){
+                margin-left: -230px;
+                margin-top: 30px;
+            }
+            @media screen and (max-width: 700px) and (min-width:600px){
+                margin-left: -290px;
+                margin-top: 30px;
+            }
+            @media screen and (max-width: 600px) {
+                margin-left: -290px;
+                margin-top: 30px;
+            }
+            @media screen and (max-width: 500px) {
+                margin-left: -290px;
+                margin-top: 30px;
+            }
             
 
 

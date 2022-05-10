@@ -27,7 +27,7 @@
 
        
     }
-
+    $small:1900px;
     .links {
         padding: 50px;
         margin: 0 50px;
@@ -36,6 +36,10 @@
         cursor: pointer;
         margin-left: 8rem;
         margin-top: 2rem;
+
+        @media screen and (max-width: $small) {
+            margin-left: -500px;
+        } 
     
         .link-item {
             width: 20rem;
@@ -189,6 +193,8 @@
             }
         }
     }
+
+    $medium:1900px;
     .hosts {
         width: 34%;
         height: 128px;
@@ -198,6 +204,12 @@
         margin-left: -35rem;
         text-decoration: none;
         margin-top: 0.7rem;
+
+        @media screen and (max-width: $medium) {
+            margin-left: -800px;
+        }        
+
+
       
 
         .language {

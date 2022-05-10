@@ -23,6 +23,8 @@ import MainLanguage from "../../Main/main-language/main-language.component";
 
 import "./header.styles.scss";
 
+
+
 const Header2 = ({ hidden3, toggleProfileHidden, toggleLanguageHidden, hidden4 }) => {
     const [header1, setHeader1] = useState("header");
     const [modalOpen, setModalOpen] = useState(false)

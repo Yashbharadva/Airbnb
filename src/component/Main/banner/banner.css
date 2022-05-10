@@ -5,11 +5,13 @@
     margin-left: auto;
     margin-right: auto;
     padding: 1rem;
+   
 }
 
 .box {
         background-color: #FF385C;
         width: 66%;
+        height: 55%;
         padding: 175px;
         margin-left: 150px;
         margin-right: 80px;
@@ -59,18 +61,10 @@
     } 
 }
 
-/* @media screen and (max-width:1900px){
-    .button{
-       margin-left: 820px;
-       width: 10%;
-    }
-} */
-
 @media screen and (max-width:1700px) {
     .box{
         background-color: #FF385C;
         width: 95%;
-        /* height: 255px; */
         margin-left: 45px;
         margin-right: 45px;
         border-radius: 7.5px;
@@ -84,7 +78,6 @@
     .box{
         background-color: #FF385C;
         width: 92%;
-        /* height: 255px; */
         margin-left: 45px;
         margin-right: 45px;
         border-radius: 7.5px;
@@ -98,7 +91,6 @@
     .box{
         background-color: #FF385C;
         width: 85%;
-        /* height: 255px; */
         margin-left: 45px;
         margin-right: 45px;
         border-radius: 7.5px;
@@ -111,10 +103,8 @@
 @media screen and (max-width:500px) {
     .box{
         background-color: #FF385C;
-        width: 82%;
-        /* height: 255px; */
-        margin-left: 45px;
-        margin-right: 45px;
+        width: 91%;
+        margin-left: 20px;
         border-radius: 7.5px;
         padding-left: 0;
         padding-right: 0;
@@ -122,40 +112,7 @@
     } 
 }
 
-@media screen and (max-width:300px) {
-    .box{
-        background-color: #FF385C;
-        width: 73%;
-        /* height: 255px; */
-        margin-left: 45px;
-        margin-right: 45px;
-        border-radius: 7.5px;
-        padding-left: 0;
-        padding-right: 0;
-        
-    } 
-}
 
-@media screen and (max-width:200px) {
-    .box{
-        background-color: #FF385C;
-        width: 70%;
-        /* height: 255px; */
-        margin-left: 45px;
-        margin-right: 45px;
-        border-radius: 7.5px;
-        padding-left: 0;
-        padding-right: 0;
-        
-    } 
-}
-
-/* @media screen and (max-width:1900px) and (min-width:100px) {
-    button{
-        margin-left: 720px;
-        width: 10%;
-     }
-} */
 
 @media screen and (max-width:1900px){
     .button{
