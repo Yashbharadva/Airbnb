@@ -32,6 +32,11 @@
             color: black;
             background-color: white;
 
+            @media screen and (max-width:500px) {
+                margin-top: 920px;
+                
+            }
+
             &:hover{
                 background-color: rgb(234, 234, 234);
             }
