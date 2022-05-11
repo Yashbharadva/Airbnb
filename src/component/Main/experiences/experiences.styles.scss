@@ -72,22 +72,113 @@
 
 
         .image1 {
-
-            img{
-
-            
-            border-radius: 10px;
-            width: 51rem;
-            border: 0px solid black;
-        }
-        }
-
-        .image2{
-            img{
+            img {
                 border-radius: 10px;
-            width: 51rem;
-            border: 0px solid black;
-            
+                width: 51rem;
+                border: 0px solid black;
+
+                @media screen and (max-width:1900px) and (min-width:1700px) {
+                    width: 810px;
+                    margin-left: -60px;
+                    height: 700px;
+                }
+                @media screen and (max-width:1700px) and (min-width:1500px) {
+                    margin-left: -66px;
+                    width: 730px;
+                    height: 650px;
+                }
+                @media screen and (max-width:1500px) and (min-width:1300px) {
+                    margin-left: -72px;
+                    width: 650px;
+                    height: 620px;
+                }
+                @media screen and (max-width:1300px) and (min-width:1100px) {
+                    margin-left: -78px;
+                    width: 580px;
+                    height: 620px;
+                }
+                @media screen and (max-width:1100px) and (min-width:900px) {
+                    margin-left: -78px;
+                    width: 460px;
+                    height: 610px;
+                }
+                @media screen and (max-width:900px) and (min-width:700px) {
+                    margin-left: -78px;
+                    width: 380px;
+                    height: 600px;
+                }
+                @media screen and (max-width:700px) and (min-width:600px) {
+                    margin-left: -40px;
+                    width: 410px;
+                    height: 600px;
+                }
+
+                @media screen and (max-width:600px) {
+                    width: 410px;
+                    margin-left: -65px;
+                    height: 600px;
+                }
+
+                @media screen and (max-width:500px) {
+                    width: 410px;
+                    margin-left: -110px;
+                    height: 600px;
+                }
+            }
+        }
+
+        .image2 {
+            img {
+                border-radius: 10px;
+                width: 51rem;
+                border: 0px solid black;
+
+                @media screen and (max-width:1900px) and (min-width:1700px) {
+                    width: 810px;
+                    height: 700px;
+                }
+                @media screen and (max-width:1700px) and (min-width:1500px) {
+                    
+                    width: 730px;
+                    height: 650px;
+                }
+                @media screen and (max-width:1500px) and (min-width:1300px) {
+                    
+                    width: 650px;
+                    height: 620px;
+                }
+                @media screen and (max-width:1300px) and (min-width:1100px) {
+                    width: 580px;
+                    height: 620px;
+                }
+                @media screen and (max-width:1100px) and (min-width:900px) {
+                    width: 460px;
+                    height: 610px;
+                }
+                @media screen and (max-width:900px) and (min-width:700px) {
+                    width: 380px;
+                    height: 600px;
+                }
+                @media screen and (max-width:700px) and (min-width:600px) {
+                    margin-top: 640px;
+                    width: 410px;
+                    height: 600px;
+                    margin-left: -415px;
+                }
+
+                @media screen and (max-width:600px) {
+                    width: 410px;
+                    margin-left: -415px;
+                    margin-top: 640px;
+                    height: 600px;
+                }
+
+                @media screen and (max-width:500px) {
+                    width: 410px;
+                    margin-left: -420px;
+                    margin-top: 640px;
+                    height: 600px;
+                }
             }
         }
 
@@ -98,12 +189,27 @@
             top: 122%;
             color: orange;
             margin-top: 85rem;
-
-
+        
             h1 {
                 margin-left: 180px;
                 width: 400px;
                 color: white;
+
+                @media screen and (max-width:1900px) and (min-width:1700px) {
+                    margin-left: -150px;
+                    margin-top: -70px;
+                }
+
+                @media screen and (max-width:1700px) and (min-width:1500px) {
+                    margin-left: -40px;
+                    margin-top: -70px;
+                }
+                
+                @media screen and (max-width:500px) {
+                    color: orange;
+                    margin-right: -200px;
+                    margin-top: 930px;
+                }
             }
 
 
@@ -118,6 +224,19 @@
                 color: black;
                 margin-left: 245px;
                 border: none;
+
+                @media screen and (max-width:1900px) and (min-width:1700px) {
+                    margin-left: -70px; 
+                }
+
+                @media screen and (max-width:1700px) and (min-width:1500px) {
+                    margin-left: 30px; 
+                }
+
+                @media screen and (max-width:500px) {
+                    margin-top: 30px;
+                    background-color: aqua;
+                }
 
                 &:hover {
                     background-color: rgb(234, 234, 234);
@@ -136,11 +255,30 @@
             h1 {
                 color: white;
                 margin-left: 280px;
+
+                @media screen and (max-width:1900px) and (min-width:1700px) {
+                    margin-left: 280px;
+                    margin-top: -70px;
+                }
+                @media screen and (max-width:1700px) and (min-width:1500px) {
+                    margin-left: 240px;
+                    margin-top: -70px;
+                }
+                
+        
             }
 
 
             .buttonn {
                 text-decoration: none;
+
+                @media screen and (max-width:1900px) and (min-width:1700px) {
+                    margin-left: -70px;
+                    
+                }
+                @media screen and (max-width:1700px) and (min-width:1500px) {
+                    margin-left: 30px; 
+                }
 
                 &:hover {
                     background-color: rgb(234, 234, 234);
@@ -157,6 +295,8 @@
                     width: 8rem;
                     font-size: small;
                     margin-left: 290px;
+
+                    
                 }
 
 
